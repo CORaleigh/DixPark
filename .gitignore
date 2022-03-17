@@ -4,11 +4,11 @@ docroot/sites/default/files
 
 # Pantheon commits a settings.php for environment-specific settings.
 # Place local settings in settings.local.php
-web/sites/*/settings.local.php
+# web/sites/*/settings.local.php
 web/sites/*/services*.yml
 !web/sites/*/services.pantheon.*.yml
 !web/sites/*/services.yml
-docroot/sites/*/settings.local.php
+# docroot/sites/*/settings.local.php
 docroot/sites/*/services*.yml
 !docroot/sites/*/services.pantheon.*.yml
 !docroot/sites/*/services.yml
