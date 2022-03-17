@@ -1,0 +1,21 @@
+uuid: e622910a-e1f2-42b5-be61-ec1029a164ce
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - entity_reference_revisions
+    - paragraphs
+id: component.field_visit_additional_links
+field_name: field_visit_additional_links
+entity_type: component
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

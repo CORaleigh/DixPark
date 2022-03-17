@@ -1,0 +1,27 @@
+uuid: 81bf69f1-3ce0-4ce2-a7b5-bfdab7940edd
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.events_3_item_block
+    - field.field.component.events_3_item_block.field_viewfield
+  module:
+    - viewfield
+id: component.events_3_item_block.default
+targetEntityType: component
+bundle: events_3_item_block
+mode: default
+content:
+  field_viewfield:
+    weight: 0
+    label: hidden
+    settings:
+      view_title: hidden
+      always_build_output: 0
+      empty_view_title: hidden
+    third_party_settings: {  }
+    type: viewfield_default
+    region: content
+hidden:
+  langcode: true
+  title: true

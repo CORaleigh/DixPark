@@ -1,0 +1,25 @@
+uuid: 3b5fa69f-fb95-44f3-94eb-1d84ad174afd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:37e7a8cd-0809-45b0-b7e0-513508ec4363'
+  module:
+    - block_content
+  theme:
+    - avenue
+id: mobilemenucontainer
+theme: avenue
+region: highlighted
+weight: -12
+provider: null
+plugin: 'block_content:37e7a8cd-0809-45b0-b7e0-513508ec4363'
+settings:
+  id: 'block_content:37e7a8cd-0809-45b0-b7e0-513508ec4363'
+  label: 'Mobile Menu Container'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

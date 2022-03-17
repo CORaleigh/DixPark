@@ -1,0 +1,18 @@
+uuid: ed8e7282-b419-40f9-ae9a-74d974cd33ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - workbench_moderation.moderation_state.published
+  enforced:
+    config: null
+  module:
+    - workbench_email
+third_party_settings:
+  workbench_email:
+    workbench_email_templates: {  }
+id: published_view
+label: 'Keep Published'
+stateFrom: published
+stateTo: published
+weight: -6

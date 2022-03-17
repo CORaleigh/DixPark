@@ -1,0 +1,38 @@
+uuid: bee6843d-2124-4abb-9db7-44b41c950fb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.calendar
+    - field.field.component.calendar.field_calendar_
+  module:
+    - text
+id: component.calendar.default
+targetEntityType: component
+bundle: calendar
+mode: default
+content:
+  field_calendar_:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

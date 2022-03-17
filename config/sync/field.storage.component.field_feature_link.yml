@@ -1,0 +1,19 @@
+uuid: a51bd5a0-5de9-46a0-8b51-9a90598496d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - link
+id: component.field_feature_link
+field_name: field_feature_link
+entity_type: component
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,63 @@
+uuid: 22899a63-83b2-43e9-b869-2419d2231272
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.visit_block
+    - field.storage.component.field_visit_block
+    - views.view.visit_block
+  module:
+    - viewfield
+id: component.visit_block.field_visit_block
+field_name: field_visit_block
+entity_type: component
+bundle: visit_block
+label: 'Visit Block'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    token_help: ''
+    display_id: block_1
+    arguments: ''
+    target_uuid: caed520f-e61f-43a2-89f1-4decd12f0a5b
+    items_to_display: ''
+default_value_callback: ''
+settings:
+  force_default: false
+  allowed_views:
+    visit_block: visit_block
+    component_view: '0'
+    content: '0'
+    block_content: '0'
+    donations: '0'
+    events: '0'
+    files: '0'
+    frontpage: '0'
+    get_involved: '0'
+    home_content: '0'
+    manage_components: '0'
+    master_planning: '0'
+    mixed_entities: '0'
+    news: '0'
+    paragraphs_search: '0'
+    user_admin_people: '0'
+    comments_recent: '0'
+    content_recent: '0'
+    search_results: '0'
+    taxonomy_term: '0'
+    who_s_new: '0'
+    who_s_online: '0'
+    workbench_current_user: '0'
+    workbench_edited: '0'
+    workbench_recent_content: '0'
+  allowed_display_types:
+    block: block
+    embed: '0'
+    feed: '0'
+    default: '0'
+    page: '0'
+  handler: 'default:view'
+  handler_settings: {  }
+field_type: viewfield

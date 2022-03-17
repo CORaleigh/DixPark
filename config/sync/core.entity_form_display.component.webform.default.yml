@@ -1,0 +1,40 @@
+uuid: 4b6b0849-5458-4812-a9d7-faa168736f7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.webform
+    - field.field.component.webform.field_webform
+    - field.field.component.webform.field_webform_description
+  module:
+    - text
+    - webform
+id: component.webform.default
+targetEntityType: component
+bundle: webform
+mode: default
+content:
+  field_webform:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+    region: content
+  field_webform_description:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

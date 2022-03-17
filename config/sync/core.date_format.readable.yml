@@ -1,0 +1,8 @@
+uuid: 5c092025-a910-4307-aafd-7b25c5b30f8d
+langcode: en
+status: true
+dependencies: {  }
+id: readable
+label: Readable
+locked: false
+pattern: 'F j, Y'

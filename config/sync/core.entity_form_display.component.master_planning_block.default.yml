@@ -1,0 +1,77 @@
+uuid: df30b9fb-164d-4249-8900-86092fec246a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.master_planning_block
+    - field.field.component.master_planning_block.field_body
+    - field.field.component.master_planning_block.field_content
+    - field.field.component.master_planning_block.field_links
+    - field.field.component.master_planning_block.field_more_link
+    - field.field.component.master_planning_block.field_viewfield
+  module:
+    - link
+    - paragraphs
+    - text
+    - viewfield
+id: component.master_planning_block.default
+targetEntityType: component
+bundle: master_planning_block
+mode: default
+content:
+  field_body:
+    weight: 3
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_content:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_links:
+    type: entity_reference_paragraphs
+    weight: 5
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_more_link:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_viewfield:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: viewfield_select
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

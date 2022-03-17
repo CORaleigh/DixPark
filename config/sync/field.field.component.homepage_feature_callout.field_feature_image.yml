@@ -1,0 +1,30 @@
+uuid: 57004890-3507-4492-8bc1-2d6e756dbd9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.homepage_feature_callout
+    - field.storage.component.field_feature_image
+    - media.type.image
+  module:
+    - bricks
+id: component.homepage_feature_callout.field_feature_image
+field_name: field_feature_image
+entity_type: component
+bundle: homepage_feature_callout
+label: 'Feature Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: 0
+    auto_create_bundle: ''
+field_type: bricks

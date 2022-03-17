@@ -1,0 +1,9 @@
+uuid: b495b344-7a5d-4d1e-8239-f39e2fd46e90
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'Plain Text'
+type: plain_text
+description: ''

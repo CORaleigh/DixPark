@@ -1,0 +1,99 @@
+uuid: 9751d108-9895-4bd8-a20b-e9beaaaca8cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slider.field_links_to
+    - field.field.paragraph.slider.field_slide_image
+    - field.field.paragraph.slider.field_subheader
+    - field.field.paragraph.slider.field_title
+    - field.field.paragraph.slider.field_title_image
+    - paragraphs.paragraphs_type.slider
+  module:
+    - field_group
+    - image
+    - link
+third_party_settings:
+  field_group:
+    group_slider_meta:
+      children:
+        - field_title
+        - field_title_image
+        - field_subheader
+        - field_links_to
+      parent_name: ''
+      weight: 20
+      format_type: html_element
+      format_settings:
+        id: slider-meta
+        classes: ''
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'slider meta'
+      region: content
+id: paragraph.slider.default
+targetEntityType: paragraph
+bundle: slider
+mode: default
+content:
+  field_links_to:
+    weight: 4
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_slide_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: banner
+      image_link: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      field_formatter_class:
+        class: ''
+    type: image
+    region: content
+  field_subheader:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_title:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_title_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  search_api_excerpt: true

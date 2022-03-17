@@ -1,0 +1,24 @@
+uuid: 974bfe89-8dfc-4949-8490-0188544e301a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.text_block_row
+    - field.field.component.text_block_row.field_component
+id: component.text_block_row.default
+targetEntityType: component
+bundle: text_block_row
+mode: default
+content:
+  field_component:
+    weight: -4
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  langcode: true
+  title: true

@@ -1,0 +1,51 @@
+uuid: 7b82e864-1adf-4fe7-8814-25928e416260
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.single_image
+    - field.field.component.single_image.field_byline
+    - field.field.component.single_image.field_caption
+    - field.field.component.single_image.field_image
+    - image.style.thumbnail
+  module:
+    - image
+id: component.single_image.default
+targetEntityType: component
+bundle: single_image
+mode: default
+content:
+  field_byline:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_caption:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

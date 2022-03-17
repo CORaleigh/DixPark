@@ -1,0 +1,57 @@
+uuid: 25f4424b-dce4-4d35-9c1b-b242dd70a77e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.homepage_feature_callout
+    - field.field.component.homepage_feature_callout.field_feature_body
+    - field.field.component.homepage_feature_callout.field_feature_image
+    - field.field.component.homepage_feature_callout.field_feature_link
+  module:
+    - bricks
+    - link
+    - text
+id: component.homepage_feature_callout.default
+targetEntityType: component
+bundle: homepage_feature_callout
+mode: default
+content:
+  field_feature_body:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_feature_image:
+    type: bricks_nested
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_feature_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 1
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

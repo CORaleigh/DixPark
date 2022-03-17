@@ -1,0 +1,20 @@
+uuid: e5115a2f-144d-4d19-ba98-731fe338d593
+langcode: en
+status: true
+dependencies: {  }
+name: 'Full HTML No WYSIWYG'
+format: full_html_no_wysiwyg
+weight: -9
+filters:
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }

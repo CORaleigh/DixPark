@@ -1,0 +1,36 @@
+uuid: c02cb037-2745-4923-aa61-68e968fb0985
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.news_3_item_block
+    - field.field.component.news_3_item_block.field_viewfield
+  module:
+    - viewfield
+id: component.news_3_item_block.default
+targetEntityType: component
+bundle: news_3_item_block
+mode: default
+content:
+  field_viewfield:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: viewfield_select
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

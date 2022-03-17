@@ -1,0 +1,59 @@
+uuid: 66688f52-9464-4412-83d7-5dd108156fd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.donation.body
+    - field.field.node.donation.field_get_involved_link
+    - node.type.donation
+  module:
+    - fences
+    - field_formatter_class
+    - link
+    - text
+    - user
+id: node.donation.default
+targetEntityType: node
+bundle: donation
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_get_involved_link:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: 'red-bg white-text'
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      field_formatter_class:
+        class: ''
+    type: link
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  workbench_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

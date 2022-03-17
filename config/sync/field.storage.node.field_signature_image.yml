@@ -1,0 +1,19 @@
+uuid: b3dc4f20-99b4-4c8c-902f-f3b9ddf528ff
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_signature_image
+field_name: field_signature_image
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

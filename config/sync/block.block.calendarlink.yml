@@ -1,0 +1,40 @@
+uuid: 2a9b5e68-73f0-4baf-8983-a041bbbd28f9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ec7d3c25-eff2-49e6-b1f0-cef3afb717ab'
+  module:
+    - block_content
+    - ctools
+    - system
+  theme:
+    - avenue
+id: calendarlink
+theme: avenue
+region: content
+weight: -9
+provider: null
+plugin: 'block_content:ec7d3c25-eff2-49e6-b1f0-cef3afb717ab'
+settings:
+  id: 'block_content:ec7d3c25-eff2-49e6-b1f0-cef3afb717ab'
+  label: 'Calendar Link'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      landing_page: landing_page
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: "/calendar-view\r\n/calendar"
+    negate: false
+    context_mapping: {  }

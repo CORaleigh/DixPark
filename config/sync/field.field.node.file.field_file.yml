@@ -1,0 +1,27 @@
+uuid: a38fa0c7-5a70-4e4b-a856-51b384a29019
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file
+    - node.type.file
+  module:
+    - file
+id: node.file.field_file
+field_name: field_file
+entity_type: node
+bundle: file
+label: File
+description: 'Upload a pdf, txt, jpg, png, gif, svg, zip, or tar file here'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf jpg png gif svg zip tar jpeg'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

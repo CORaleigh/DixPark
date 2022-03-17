@@ -1,0 +1,57 @@
+uuid: e101afb1-6135-4997-a631-a301de53562e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.news_block
+    - field.storage.component.field_news_viewfield
+    - views.view.news
+  module:
+    - viewfield
+id: component.news_block.field_news_viewfield
+field_name: field_news_viewfield
+entity_type: component
+bundle: news_block
+label: 'News Viewfield'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    token_help: ''
+    display_id: block_2
+    arguments: ''
+    target_uuid: 695c2f7a-1eea-46c0-b54d-8663b4994f13
+    items_to_display: ''
+default_value_callback: ''
+settings:
+  force_default: true
+  allowed_views:
+    news: news
+    content: '0'
+    block_content: '0'
+    donations: '0'
+    events: '0'
+    files: '0'
+    frontpage: '0'
+    get_involved: '0'
+    home_content: '0'
+    manage_components: '0'
+    master_planning: '0'
+    mixed_entities: '0'
+    paragraphs_search: '0'
+    user_admin_people: '0'
+    comments_recent: '0'
+    content_recent: '0'
+    taxonomy_term: '0'
+    visit: '0'
+    who_s_new: '0'
+    who_s_online: '0'
+  allowed_display_types:
+    block: block
+    feed: '0'
+    default: '0'
+    page: '0'
+  handler: 'default:view'
+  handler_settings: {  }
+field_type: viewfield

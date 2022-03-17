@@ -1,0 +1,9 @@
+uuid: 3a19c008-dcf2-40be-b181-21a8116c288c
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'Text with Title and Expandable'
+type: text_with_title_and_expandable
+description: 'Text with a title and an expandable view'

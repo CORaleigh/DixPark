@@ -1,0 +1,25 @@
+uuid: 3376da3b-4f1c-4162-8bf8-9d3460fd0c49
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d84ac58a-4070-494e-92b2-927d6899f072'
+  module:
+    - block_content
+  theme:
+    - avenue
+id: css
+theme: avenue
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:d84ac58a-4070-494e-92b2-927d6899f072'
+settings:
+  id: 'block_content:d84ac58a-4070-494e-92b2-927d6899f072'
+  label: css
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

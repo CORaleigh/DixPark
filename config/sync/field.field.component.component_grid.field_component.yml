@@ -1,0 +1,44 @@
+uuid: b9f3e90f-9b7a-43aa-949c-6be881fc8a78
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.article_teaser_block
+    - eck.eck_type.component.component_grid
+    - eck.eck_type.component.events_block
+    - eck.eck_type.component.get_involved_block
+    - eck.eck_type.component.homepage_feature_callout
+    - eck.eck_type.component.master_planning_block
+    - eck.eck_type.component.news_block
+    - eck.eck_type.component.text_block
+    - eck.eck_type.component.view_component
+    - eck.eck_type.component.visit_block
+    - field.storage.component.field_component
+id: component.component_grid.field_component
+field_name: field_component
+entity_type: component
+bundle: component_grid
+label: Component
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:component'
+  handler_settings:
+    target_bundles:
+      article_teaser_block: article_teaser_block
+      events_block: events_block
+      get_involved_block: get_involved_block
+      homepage_feature_callout: homepage_feature_callout
+      master_planning_block: master_planning_block
+      news_block: news_block
+      text_block: text_block
+      view_component: view_component
+      visit_block: visit_block
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: events_block
+field_type: entity_reference

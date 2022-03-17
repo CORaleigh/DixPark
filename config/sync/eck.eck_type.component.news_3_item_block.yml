@@ -1,0 +1,9 @@
+uuid: ff3a3e1b-ad0f-44f6-9b98-9ef77f5f6cdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'News 3 Item Block'
+type: news_3_item_block
+description: ''

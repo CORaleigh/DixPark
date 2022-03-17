@@ -1,0 +1,22 @@
+global-css:
+  version: VERSION
+  css:
+    theme:
+     fonts/fontawesome/css/font-awesome.min.css: {}
+     fonts/segan/stylesheet.css: {}
+     css/base.css: {}
+     css/fullcalendar.min.css: {}
+     css/custom.css: {}
+     css/responsive.css: {}
+  js:
+    js/masonry.pkgd.min.js: {}
+    js/masonry-horizontal.js: {}
+    js/moment.js: {}
+    js/fullcalendar/dist/fullcalendar.js: {}
+    js/custom.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once

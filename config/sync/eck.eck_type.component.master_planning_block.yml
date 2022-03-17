@@ -1,0 +1,9 @@
+uuid: 0705aa67-0fe8-4f2f-8423-076c687b9b3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'Master Planning Block'
+type: master_planning_block
+description: ''

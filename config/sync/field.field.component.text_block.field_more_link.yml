@@ -1,0 +1,23 @@
+uuid: 78053dc5-1d1c-4d94-adae-cb65bd13ad92
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.text_block
+    - field.storage.component.field_more_link
+  module:
+    - link
+id: component.text_block.field_more_link
+field_name: field_more_link
+entity_type: component
+bundle: text_block
+label: 'More Link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

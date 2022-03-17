@@ -1,0 +1,21 @@
+uuid: 915e04a5-04ff-4697-9d40-28f40775f282
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - viewfield
+    - views
+id: component.field_viewfield
+field_name: field_viewfield
+entity_type: component
+type: viewfield
+settings:
+  target_type: view
+module: viewfield
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

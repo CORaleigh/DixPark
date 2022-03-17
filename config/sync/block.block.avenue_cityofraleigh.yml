@@ -1,0 +1,25 @@
+uuid: 5afa90f0-75a2-47e8-9ea4-0482163e88bc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a324bb44-a4f0-40ea-bd01-9a7152c6afca'
+  module:
+    - block_content
+  theme:
+    - avenue
+id: avenue_cityofraleigh
+theme: avenue
+region: footer
+weight: -9
+provider: null
+plugin: 'block_content:a324bb44-a4f0-40ea-bd01-9a7152c6afca'
+settings:
+  id: 'block_content:a324bb44-a4f0-40ea-bd01-9a7152c6afca'
+  label: 'City of Raleigh'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

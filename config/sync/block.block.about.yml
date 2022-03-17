@@ -1,0 +1,42 @@
+uuid: 8acb7e61-c60b-49d5-ad4c-b4ca36357db0
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.about
+  module:
+    - ctools
+    - menu_block
+    - system
+  theme:
+    - avenue
+id: about
+theme: avenue
+region: content
+weight: -5
+provider: null
+plugin: 'menu_block:about'
+settings:
+  id: 'menu_block:about'
+  label: About
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'about:'
+  suggestion: about
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      landing_page: landing_page
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: "/about\r\n/about/*"
+    negate: false
+    context_mapping: {  }

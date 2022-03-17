@@ -1,0 +1,66 @@
+uuid: 4911127c-37bf-4521-a6ac-810f5c7e267e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.view_component
+    - field.storage.component.field_viewfield
+  module:
+    - viewfield
+id: component.view_component.field_viewfield
+field_name: field_viewfield
+entity_type: component
+bundle: view_component
+label: View
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  force_default: false
+  allowed_views:
+    donations: donations
+    events: events
+    master_planning: master_planning
+    mixed_entities: mixed_entities
+    news: news
+    signature_events: signature_events
+    comment: '0'
+    component_view: '0'
+    content: '0'
+    block_content: '0'
+    file_entity_browser: '0'
+    files: '0'
+    frontpage: '0'
+    get_involved: '0'
+    home_content: '0'
+    manage_components: '0'
+    media: '0'
+    media_library: '0'
+    paragraphs_search: '0'
+    user_admin_people: '0'
+    comments_recent: '0'
+    content_recent: '0'
+    redirect: '0'
+    search_results: '0'
+    taxonomy_term: '0'
+    visit_block: '0'
+    watchdog: '0'
+    webform_submissions: '0'
+    who_s_new: '0'
+    who_s_online: '0'
+    workbench_current_user: '0'
+    workbench_edited: '0'
+    workbench_recent_content: '0'
+  allowed_display_types:
+    block: '0'
+    embed: '0'
+    entity_browser: '0'
+    feed: '0'
+    default: '0'
+    page: '0'
+    rest_export: '0'
+  handler: 'default:view'
+  handler_settings: {  }
+field_type: viewfield

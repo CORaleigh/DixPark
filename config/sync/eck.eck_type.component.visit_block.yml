@@ -1,0 +1,9 @@
+uuid: 8bbb68d2-466c-4516-bf03-69815d425b69
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'Visit Block'
+type: visit_block
+description: ''

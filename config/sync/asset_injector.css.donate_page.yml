@@ -1,0 +1,13 @@
+uuid: bfce45b7-763b-496f-97f5-79757f3fc86b
+langcode: en
+status: false
+dependencies: {  }
+id: donate_page
+label: 'Donate Page iframe'
+code: ".pageRegion h1 {\r\n  color: #ec584c;\r\n  font-size: 2.3rem!important;\r\n  padding-bottom: 10px;\r\n}\r\n\r\n.publishedBody h1 {\r\n  font-weight: normal!important;\r\n}"
+media: all
+nodeType: ''
+themes: {  }
+preprocess: true
+visibility: true
+pages: node/176

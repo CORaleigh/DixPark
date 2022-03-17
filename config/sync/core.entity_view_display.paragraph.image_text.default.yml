@@ -1,0 +1,98 @@
+uuid: 9ad300d5-0250-47fc-8488-8489405db6a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_text.field_byline
+    - field.field.paragraph.image_text.field_caption
+    - field.field.paragraph.image_text.field_image_demo
+    - field.field.paragraph.image_text.field_text_demo
+    - image.style.large
+    - paragraphs.paragraphs_type.image_text
+  module:
+    - field_group
+    - image
+    - text
+third_party_settings:
+  field_group:
+    group_image:
+      children:
+        - group_center
+      parent_name: group_center
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: image-wrap
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Image
+      region: content
+    group_center:
+      children:
+        - group_image
+        - field_image_demo
+        - field_caption
+        - field_byline
+        - field_text_demo
+      parent_name: group_image
+      weight: 2
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: ''
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: center
+      region: content
+_core:
+  default_config_hash: AtqI7gAU0cJR1kM7IDEnUqWjEbryjkni-c5EU_BwWtA
+id: paragraph.image_text.default
+targetEntityType: paragraph
+bundle: image_text
+mode: default
+content:
+  field_byline:
+    weight: 5
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_caption:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_image_demo:
+    type: image
+    weight: 3
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    label: hidden
+    region: content
+  field_text_demo:
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    label: hidden
+    region: content
+hidden:
+  created: true
+  search_api_excerpt: true
+  uid: true

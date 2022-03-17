@@ -1,0 +1,11 @@
+uuid: a6282a24-246d-4a41-a66e-91fb79dc6188
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.donation
+id: node.donation
+target_entity_type_id: node
+target_bundle: donation
+default_langcode: site_default
+language_alterable: false

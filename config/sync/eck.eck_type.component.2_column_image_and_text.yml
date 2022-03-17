@@ -1,0 +1,9 @@
+uuid: 8484186f-dcf2-40b6-98c4-208dee3dad12
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: '2 Column Image and Text'
+type: 2_column_image_and_text
+description: ''

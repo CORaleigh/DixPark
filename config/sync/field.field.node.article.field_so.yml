@@ -1,0 +1,23 @@
+uuid: 3e70a4b1-6f70-47e7-bf70-210573141648
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_so
+    - node.type.article
+id: node.article.field_so
+field_name: field_so
+entity_type: node
+bundle: article
+label: 'Sort Order'
+description: 'If you need to create an order for an article type ( for instance, in a VISIT block, create order here ) '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

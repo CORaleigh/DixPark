@@ -1,0 +1,23 @@
+uuid: 002d6da8-388b-4fa6-a96d-1ac03e26f8e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.text_block
+    - field.storage.component.field_title_visible
+id: component.text_block.field_title_visible
+field_name: field_title_visible
+entity_type: component
+bundle: text_block
+label: 'Hide Title'
+description: 'Hide Text Block title '
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: '1'
+  off_label: '0'
+field_type: boolean

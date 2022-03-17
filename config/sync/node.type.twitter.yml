@@ -1,0 +1,18 @@
+uuid: 1c9bdf3f-2e80-4351-ba39-df88dc2c3cc5
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Twitter
+type: twitter
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

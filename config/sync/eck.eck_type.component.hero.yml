@@ -1,0 +1,9 @@
+uuid: b485efaa-22d3-49a4-a789-673b7e953dbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'Hero Slider'
+type: hero
+description: 'Hero slider '

@@ -1,0 +1,9 @@
+uuid: 84c6a17b-2e38-4a71-98fe-080de4027663
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'Image with text and link'
+type: image_with_text_and_link
+description: ''

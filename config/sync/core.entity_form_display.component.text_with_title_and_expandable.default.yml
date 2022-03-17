@@ -1,0 +1,43 @@
+uuid: 4ce5bd5f-ecb7-46ef-afe5-2974a105f812
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.text_with_title_and_expandable
+    - field.field.component.text_with_title_and_expandable.field_body
+    - field.field.component.text_with_title_and_expandable.field_display_text
+  module:
+    - text
+id: component.text_with_title_and_expandable.default
+targetEntityType: component
+bundle: text_with_title_and_expandable
+mode: default
+content:
+  field_body:
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_display_text:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,32 @@
+uuid: 3f83de8e-70f2-4fa2-af9c-ed340ef1334b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.plain_text
+    - field.field.component.plain_text.field_plain_text
+    - field.field.component.plain_text.field_rich_text
+  module:
+    - text
+id: component.plain_text.default
+targetEntityType: component
+bundle: plain_text
+mode: default
+content:
+  field_plain_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_rich_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  langcode: true
+  title: true

@@ -1,0 +1,9 @@
+uuid: fbd37cf7-eb23-4d43-b104-8d14246882f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'Get Involved Block'
+type: get_involved_block
+description: ''

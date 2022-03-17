@@ -1,0 +1,106 @@
+uuid: 46e5dc5e-dbb9-4ccc-8105-f471f6e88ee2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slider.field_links_to
+    - field.field.paragraph.slider.field_slide_image
+    - field.field.paragraph.slider.field_subheader
+    - field.field.paragraph.slider.field_title
+    - field.field.paragraph.slider.field_title_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.slider
+  module:
+    - field_group
+    - image
+    - link
+    - workbench_moderation
+third_party_settings:
+  field_group:
+    group_slider_left:
+      children:
+        - field_slide_image
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: .slider-left
+        element: div
+        show_label: false
+        label_element: h3
+        required_fields: true
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Slider Left'
+      region: content
+    group_slider_right:
+      children:
+        - field_title
+        - field_sub_header
+        - field_links_to
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: .slider-right
+        element: div
+        show_label: false
+        label_element: h3
+        required_fields: true
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Slider Right'
+      region: content
+id: paragraph.slider.default
+targetEntityType: paragraph
+bundle: slider
+mode: default
+content:
+  field_links_to:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_slide_image:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_subheader:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_title_image:
+    weight: 6
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

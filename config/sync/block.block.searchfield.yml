@@ -1,0 +1,25 @@
+uuid: 08562cd3-6231-4ee1-8683-4d7e73877941
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bbf18072-8cff-455b-91d2-860d0ff4bec6'
+  module:
+    - block_content
+  theme:
+    - avenue
+id: searchfield
+theme: avenue
+region: header
+weight: -8
+provider: null
+plugin: 'block_content:bbf18072-8cff-455b-91d2-860d0ff4bec6'
+settings:
+  id: 'block_content:bbf18072-8cff-455b-91d2-860d0ff4bec6'
+  label: 'Search Field'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,42 @@
+uuid: 5703e0dc-5fbd-4e00-bd3f-e51ad52e6ebd
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.featured_info
+    - field.field.component.featured_info.field_body
+  module:
+    - fences
+    - field_formatter_class
+    - text
+id: component.featured_info.default
+targetEntityType: component
+bundle: featured_info
+mode: default
+content:
+  field_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  title:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: h2
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      field_formatter_class:
+        class: ''
+hidden:
+  langcode: true

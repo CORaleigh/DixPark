@@ -1,0 +1,50 @@
+uuid: 8278a405-c47d-466a-a483-760c0fbfe675
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.text_with_title_and_expandable
+    - field.field.component.text_with_title_and_expandable.field_body
+    - field.field.component.text_with_title_and_expandable.field_display_text
+  module:
+    - fences
+    - field_formatter_class
+    - text
+id: component.text_with_title_and_expandable.default
+targetEntityType: component
+bundle: text_with_title_and_expandable
+mode: default
+content:
+  field_body:
+    weight: -3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_display_text:
+    weight: -4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: h2
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      field_formatter_class:
+        class: ''
+hidden:
+  langcode: true

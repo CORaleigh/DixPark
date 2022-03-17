@@ -1,0 +1,20 @@
+uuid: 6b44a44d-5872-4e56-a263-296cca121278
+langcode: en
+status: true
+dependencies:
+  theme:
+    - avenue
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: avenue_local_actions
+theme: avenue
+region: content
+weight: -12
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

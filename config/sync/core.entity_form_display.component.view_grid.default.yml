@@ -1,0 +1,36 @@
+uuid: 121c0760-12c7-43a6-8b15-1bf260bf57e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.view_grid
+    - field.field.component.view_grid.field_viewfield
+  module:
+    - viewfield
+id: component.view_grid.default
+targetEntityType: component
+bundle: view_grid
+mode: default
+content:
+  field_viewfield:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: viewfield_select
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

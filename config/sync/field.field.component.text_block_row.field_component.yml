@@ -1,0 +1,28 @@
+uuid: 81c6848b-8641-4661-a699-24afaab5b9ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.text_block
+    - eck.eck_type.component.text_block_row
+    - field.storage.component.field_component
+id: component.text_block_row.field_component
+field_name: field_component
+entity_type: component
+bundle: text_block_row
+label: 'Text Block '
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:component'
+  handler_settings:
+    target_bundles:
+      text_block: text_block
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

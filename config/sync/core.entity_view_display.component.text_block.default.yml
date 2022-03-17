@@ -1,0 +1,67 @@
+uuid: 719030fc-bced-4984-a81c-50e7073dde85
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.text_block
+    - field.field.component.text_block.field_body
+    - field.field.component.text_block.field_more_link
+    - field.field.component.text_block.field_title_visible
+  module:
+    - fences
+    - field_formatter_class
+    - link
+    - text
+id: component.text_block.default
+targetEntityType: component
+bundle: text_block
+mode: default
+content:
+  field_body:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_more_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_title_visible:
+    weight: 0
+    label: hidden
+    settings:
+      format: boolean
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      field_formatter_class:
+        class: ''
+    type: boolean
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 1
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true

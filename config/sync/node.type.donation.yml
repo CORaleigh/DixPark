@@ -1,0 +1,27 @@
+uuid: db3e1035-0f1e-4426-a422-da9ff0b35d71
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - workbench_moderation
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  workbench_moderation:
+    enabled: true
+    allowed_moderation_states:
+      - published
+      - archived
+      - draft
+      - needs_review
+    default_moderation_state: draft
+name: Donation
+type: donation
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

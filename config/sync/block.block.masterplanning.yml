@@ -1,0 +1,42 @@
+uuid: fdfa37dd-4c79-42b0-b1dd-a9e6d56c4626
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.master-planning
+  module:
+    - ctools
+    - menu_block
+    - system
+  theme:
+    - avenue
+id: masterplanning
+theme: avenue
+region: content
+weight: -6
+provider: null
+plugin: 'menu_block:master-planning'
+settings:
+  id: 'menu_block:master-planning'
+  label: 'Master Planning'
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'master-planning:'
+  suggestion: master_planning
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      landing_page: landing_page
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: "/park-planning\r\n/park-planning/*"
+    negate: false
+    context_mapping: {  }

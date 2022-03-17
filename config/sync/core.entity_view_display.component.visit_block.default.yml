@@ -1,0 +1,70 @@
+uuid: 50e1c7a1-a46e-413c-9c5f-21466b5096bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.visit_block
+    - field.field.component.visit_block.field_more_link
+    - field.field.component.visit_block.field_visit_additional_links
+    - field.field.component.visit_block.field_visit_block
+  module:
+    - entity_reference_revisions
+    - fences
+    - field_formatter_class
+    - link
+    - viewfield
+id: component.visit_block.default
+targetEntityType: component
+bundle: visit_block
+mode: default
+content:
+  field_more_link:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_visit_additional_links:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_visit_block:
+    weight: 2
+    label: hidden
+    settings:
+      view_title: hidden
+      always_build_output: 0
+      empty_view_title: hidden
+    third_party_settings: {  }
+    type: viewfield_default
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: h2
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      field_formatter_class:
+        class: ''
+hidden:
+  langcode: true

@@ -1,0 +1,9 @@
+uuid: 4638a636-2ca2-4f23-bed8-425b433101b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'Text Block'
+type: text_block
+description: 'Block with white background for landing pages'

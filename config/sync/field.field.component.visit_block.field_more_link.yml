@@ -1,0 +1,28 @@
+uuid: 25952c56-3d10-49c6-a759-863ea7bdf74a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.visit_block
+    - field.storage.component.field_more_link
+  module:
+    - link
+id: component.visit_block.field_more_link
+field_name: field_more_link
+entity_type: component
+bundle: visit_block
+label: 'More Link'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    attributes: {  }
+    uri: 'entity:node/16'
+    title: MORE
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 2
+field_type: link

@@ -1,0 +1,31 @@
+uuid: 6a1383e7-1d2c-40cc-a4a8-9317c20c17ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.js_widget
+    - field.field.component.js_widget.field_embed_code
+  module:
+    - text
+id: component.js_widget.default
+targetEntityType: component
+bundle: js_widget
+mode: default
+content:
+  field_embed_code:
+    weight: -4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true

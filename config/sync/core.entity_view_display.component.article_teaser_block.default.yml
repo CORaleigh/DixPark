@@ -1,0 +1,43 @@
+uuid: 8993af43-87a2-40c8-80f7-268402659c0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.article_teaser_block
+    - field.field.component.article_teaser_block.field_content
+  module:
+    - fences
+    - field_formatter_class
+id: component.article_teaser_block.default
+targetEntityType: component
+bundle: article_teaser_block
+mode: default
+content:
+  field_content:
+    weight: -4
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      field_formatter_class:
+        class: ''
+    type: entity_reference_entity_view
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true

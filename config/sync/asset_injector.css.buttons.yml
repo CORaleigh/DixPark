@@ -1,0 +1,13 @@
+uuid: e639c874-3b9d-4f54-b38b-14522851e426
+langcode: en
+status: false
+dependencies: {  }
+id: buttons
+label: Buttons
+code: ".blue-bg {\r\n  background-color: #51a7db!important;\r\n  color: #fff!important;\r\n}\r\n"
+media: all
+nodeType: ''
+themes: {  }
+preprocess: true
+visibility: false
+pages: ''

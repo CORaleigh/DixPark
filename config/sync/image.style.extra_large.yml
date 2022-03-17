@@ -1,0 +1,7 @@
+uuid: a58565ff-b283-48af-8e5e-1c37abcd8006
+langcode: en
+status: true
+dependencies: {  }
+name: extra_large
+label: 'Extra Large'
+effects: {  }

@@ -1,0 +1,21 @@
+uuid: 126a1e13-d4b8-4dd7-9f46-371a0ed834c8
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - avenue
+id: searchform
+theme: avenue
+region: highlighted
+weight: -11
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: visible
+  page_id: ''
+visibility: {  }

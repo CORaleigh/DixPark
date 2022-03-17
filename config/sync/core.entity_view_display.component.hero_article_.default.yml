@@ -1,0 +1,42 @@
+uuid: 3c9d6b61-3fef-4178-a20e-36ea48bea1ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.hero_article_
+    - field.field.component.hero_article_.field_body
+  module:
+    - fences
+    - field_formatter_class
+    - text
+id: component.hero_article_.default
+targetEntityType: component
+bundle: hero_article_
+mode: default
+content:
+  field_body:
+    weight: -3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: h2
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      field_formatter_class:
+        class: ''
+hidden:
+  langcode: true

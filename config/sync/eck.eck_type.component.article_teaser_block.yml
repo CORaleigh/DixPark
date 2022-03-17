@@ -1,0 +1,9 @@
+uuid: f36a5d58-9827-490b-a052-798af7af62c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'Article Teaser Block'
+type: article_teaser_block
+description: ''

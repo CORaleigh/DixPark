@@ -1,0 +1,42 @@
+uuid: 0303fc33-609f-41f5-9969-15167d6d9fb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.visit-the-park
+  module:
+    - ctools
+    - menu_block
+    - system
+  theme:
+    - avenue
+id: visitthepark
+theme: avenue
+region: content
+weight: -4
+provider: null
+plugin: 'menu_block:visit-the-park'
+settings:
+  id: 'menu_block:visit-the-park'
+  label: 'Visit the Park'
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'visit-the-park:'
+  suggestion: visit_the_park
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      landing_page: landing_page
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: "/visit\r\n/visit/*"
+    negate: false
+    context_mapping: {  }

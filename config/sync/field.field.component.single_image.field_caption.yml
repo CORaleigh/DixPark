@@ -1,0 +1,19 @@
+uuid: 1739956d-4486-4cc8-af5f-8ed47484b17d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.single_image
+    - field.storage.component.field_caption
+id: component.single_image.field_caption
+field_name: field_caption
+entity_type: component
+bundle: single_image
+label: Caption
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

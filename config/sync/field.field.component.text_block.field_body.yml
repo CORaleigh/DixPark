@@ -1,0 +1,23 @@
+uuid: 26467ead-c101-477c-9288-6fda21904d30
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.text_block
+    - field.storage.component.field_body
+  module:
+    - text
+id: component.text_block.field_body
+field_name: field_body
+entity_type: component
+bundle: text_block
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

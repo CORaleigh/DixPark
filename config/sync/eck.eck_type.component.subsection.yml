@@ -1,0 +1,9 @@
+uuid: f373a8cc-9664-4986-b6f6-f7b48847e4f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: Subsection
+type: subsection
+description: ''

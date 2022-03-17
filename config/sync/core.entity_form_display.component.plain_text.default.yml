@@ -1,0 +1,41 @@
+uuid: 79caa70e-3204-413a-8a0b-0b1a68b11880
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.plain_text
+    - field.field.component.plain_text.field_plain_text
+    - field.field.component.plain_text.field_rich_text
+  module:
+    - text
+id: component.plain_text.default
+targetEntityType: component
+bundle: plain_text
+mode: default
+content:
+  field_plain_text:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_rich_text:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,19 @@
+uuid: d7f50f19-048f-46ad-b91e-232941ad9e96
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.plain_text
+    - field.storage.component.field_plain_text
+id: component.plain_text.field_plain_text
+field_name: field_plain_text
+entity_type: component
+bundle: plain_text
+label: 'Plain Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

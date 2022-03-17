@@ -1,0 +1,41 @@
+uuid: ea74cc45-70ec-4975-9a4b-454de56ad901
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.entity_
+    - field.field.component.entity_.field_article_date
+    - field.field.component.entity_.field_content
+  module:
+    - datetime
+id: component.entity_.default
+targetEntityType: component
+bundle: entity_
+mode: default
+content:
+  field_article_date:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_content:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

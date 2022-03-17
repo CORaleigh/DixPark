@@ -1,0 +1,25 @@
+uuid: cef87bc2-7704-4e8f-9baa-ba0a7c0ec213
+langcode: en
+status: false
+dependencies:
+  config:
+    - webform.webform.get_insider_updates
+  module:
+    - webform
+  theme:
+    - avenue
+id: avenue_webform
+theme: avenue
+region: footer
+weight: -6
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Stay in the Loop'
+  provider: webform
+  label_display: visible
+  webform_id: get_insider_updates
+  default_data: ''
+  redirect: false
+visibility: {  }

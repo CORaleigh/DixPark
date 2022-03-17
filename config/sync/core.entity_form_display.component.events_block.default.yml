@@ -1,0 +1,46 @@
+uuid: 6ecd5b98-761e-4d75-a24e-04cbad12ea75
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.events_block
+    - field.field.component.events_block.field_more_link
+    - field.field.component.events_block.field_viewfield
+  module:
+    - link
+    - viewfield
+id: component.events_block.default
+targetEntityType: component
+bundle: events_block
+mode: default
+content:
+  field_more_link:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_viewfield:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: viewfield_select
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

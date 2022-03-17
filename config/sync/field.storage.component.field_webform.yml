@@ -1,0 +1,20 @@
+uuid: d31900bf-4d2d-4075-a21f-7f0c56bed9cb
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - webform
+id: component.field_webform
+field_name: field_webform
+entity_type: component
+type: webform
+settings:
+  target_type: webform
+module: webform
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

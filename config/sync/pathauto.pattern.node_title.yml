@@ -1,0 +1,25 @@
+uuid: fb69ef37-e719-4e0f-a3e3-87817babfb5c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node_title
+label: 'Node Title'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  c80a044c-71a7-4edd-a417-5cbe23b36b51:
+    id: node_type
+    bundles:
+      donation: donation
+      landing_page: landing_page
+      page: page
+      webform: webform
+    negate: false
+    context_mapping:
+      node: node
+    uuid: c80a044c-71a7-4edd-a417-5cbe23b36b51
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,37 @@
+uuid: 4f3bda07-dfd3-4975-adc7-5cfd52af8805
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.hero
+    - field.field.component.hero.field_slider
+  module:
+    - entity_reference_revisions
+    - fences
+    - field_formatter_class
+id: component.hero.default
+targetEntityType: component
+bundle: hero
+mode: default
+content:
+  field_slider:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      field_formatter_class:
+        class: ''
+    region: content
+hidden:
+  langcode: true
+  title: true

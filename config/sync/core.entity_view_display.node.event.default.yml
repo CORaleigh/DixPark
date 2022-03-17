@@ -1,0 +1,92 @@
+uuid: 4d7621f7-8d87-4840-b94f-0ec3a4a60acb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.event.body
+    - field.field.node.event.field_datetime
+    - field.field.node.event.field_event_category
+    - field.field.node.event.field_location
+    - field.field.node.event.field_signature_image
+    - field.field.node.event.field_spotlight_event
+    - field.field.node.event.field_tags
+    - node.type.event
+  module:
+    - datetime
+    - fences
+    - field_formatter_class
+    - text
+    - user
+id: node.event.default
+targetEntityType: node
+bundle: event
+mode: default
+content:
+  body:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_datetime:
+    weight: 1
+    label: hidden
+    settings:
+      timezone_override: America/New_York
+      date_format: U
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      field_formatter_class:
+        class: ''
+    type: datetime_custom
+    region: content
+  field_event_category:
+    weight: 2
+    label: hidden
+    settings:
+      link: false
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      field_formatter_class:
+        class: ''
+    type: entity_reference_label
+    region: content
+  field_location:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_signature_image:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  workbench_moderation_control:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_spotlight_event: true
+  field_tags: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

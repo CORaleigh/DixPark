@@ -1,0 +1,25 @@
+uuid: 0c72ae3d-7a1f-49e6-9968-9e9496a6e257
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - avenue
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: avenue_branding
+theme: avenue
+region: header
+weight: -9
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

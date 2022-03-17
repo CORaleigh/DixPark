@@ -1,0 +1,42 @@
+uuid: 7c438ba6-cf49-419e-b486-6382efffbc4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.view_component
+    - field.field.component.view_component.field_viewfield
+  module:
+    - fences
+    - viewfield
+id: component.view_component.default
+targetEntityType: component
+bundle: view_component
+mode: default
+content:
+  field_viewfield:
+    weight: 1
+    label: hidden
+    settings:
+      view_title: hidden
+      always_build_output: 0
+      empty_view_title: hidden
+    third_party_settings: {  }
+    type: viewfield_default
+    region: content
+  title:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: h2
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+hidden:
+  langcode: true

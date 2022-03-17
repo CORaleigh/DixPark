@@ -1,0 +1,20 @@
+uuid: 3b650edf-075d-4a6f-99ea-19070c545d7a
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - text
+id: component.field_calendar_
+field_name: field_calendar_
+entity_type: component
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,38 @@
+uuid: aab6faaa-c129-4ad8-8551-ee0e2fa4bb56
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.js_widget
+    - field.field.component.js_widget.field_embed_code
+  module:
+    - text
+id: component.js_widget.default
+targetEntityType: component
+bundle: js_widget
+mode: default
+content:
+  field_embed_code:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

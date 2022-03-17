@@ -1,0 +1,11 @@
+uuid: 26aca717-d295-4776-aa82-c799ef853a59
+langcode: en
+status: true
+dependencies:
+  module:
+    - workbench_moderation_actions
+id: state_change__block_content__draft
+label: 'Set Custom block as Draft'
+type: block_content
+plugin: 'state_change:block_content__draft'
+configuration: {  }

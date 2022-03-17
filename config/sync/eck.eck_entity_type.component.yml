@@ -1,0 +1,10 @@
+uuid: d7b77bf2-297f-450f-b1ee-911d0d8c7de8
+langcode: en
+status: true
+dependencies: {  }
+id: component
+label: Component
+created: false
+changed: false
+uid: false
+title: true

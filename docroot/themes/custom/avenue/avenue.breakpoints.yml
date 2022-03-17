@@ -1,0 +1,12 @@
+avenue.mobile:
+  label: mobile
+  mediaQuery: 'all and (max-width: 768px)'
+  weight: 0
+  multipliers:
+    - 1x
+avenue.wide:
+  label: wide
+  mediaQuery: 'all and (min-width: 769px)'
+  weight: 1
+  multipliers:
+    - 1x

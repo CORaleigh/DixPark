@@ -1,0 +1,51 @@
+uuid: 2a9d93f9-1e9d-4b4d-9c00-882d38473545
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.view_grid
+    - field.storage.component.field_viewfield
+  module:
+    - viewfield
+id: component.view_grid.field_viewfield
+field_name: field_viewfield
+entity_type: component
+bundle: view_grid
+label: Viewfield
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  force_default: false
+  allowed_views:
+    events: events
+    get_involved: get_involved
+    master_planning: master_planning
+    mixed_entities: mixed_entities
+    news: news
+    visit: visit
+    component_view: '0'
+    content: '0'
+    block_content: '0'
+    donations: '0'
+    files: '0'
+    frontpage: '0'
+    home_content: '0'
+    manage_components: '0'
+    paragraphs_search: '0'
+    user_admin_people: '0'
+    comments_recent: '0'
+    content_recent: '0'
+    taxonomy_term: '0'
+    who_s_new: '0'
+    who_s_online: '0'
+  allowed_display_types:
+    block: block
+    feed: '0'
+    default: '0'
+    page: '0'
+  handler: 'default:view'
+  handler_settings: {  }
+field_type: viewfield

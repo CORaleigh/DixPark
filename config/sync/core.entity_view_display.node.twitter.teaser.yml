@@ -1,0 +1,35 @@
+uuid: d5f7e8dc-6db5-4e94-9f85-73a53a8319a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.twitter.body
+    - field.field.node.twitter.field_tweet_date
+    - field.field.node.twitter.field_tweet_link
+    - node.type.twitter
+  module:
+    - text
+    - user
+id: node.twitter.teaser
+targetEntityType: node
+bundle: twitter
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_tweet_date: true
+  field_tweet_link: true
+  langcode: true

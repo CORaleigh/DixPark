@@ -1,0 +1,8 @@
+uuid: 2928d03a-811a-4856-befd-31a94fe4f35b
+langcode: en
+status: true
+dependencies: {  }
+name: 'Custom Color'
+vid: color
+description: ''
+weight: 0

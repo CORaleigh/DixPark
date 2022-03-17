@@ -1,0 +1,13 @@
+uuid: a1a35d1a-ea9d-4286-b24b-bc0f43ae4b36
+langcode: en
+status: false
+dependencies: {  }
+id: events
+label: Events
+code: ".event-date .datetime:last-child {\r\n  max-width: 170px;\r\n}\r\n\r\n#calendar-toggle a {\r\n  display: inline-block;\r\n}\r\n\r\n.fc-scroller {\r\n  overflow: hidden!important;\r\n}\r\n\r\n.node-type-events {\r\n      padding-top: 7px;\r\n}\r\n}"
+media: all
+nodeType: ''
+themes: {  }
+preprocess: true
+visibility: false
+pages: ''

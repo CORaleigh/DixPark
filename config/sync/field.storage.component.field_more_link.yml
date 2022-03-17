@@ -1,0 +1,19 @@
+uuid: 2e681733-0441-4d4f-be75-fead5c71e016
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - link
+id: component.field_more_link
+field_name: field_more_link
+entity_type: component
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

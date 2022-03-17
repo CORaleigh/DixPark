@@ -1,0 +1,9 @@
+uuid: 3f3ee79a-39fb-4cae-9ef6-c7aabed3e64f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'Component Grid'
+type: component_grid
+description: ''

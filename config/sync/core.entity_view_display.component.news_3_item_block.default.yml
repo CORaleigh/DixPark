@@ -1,0 +1,27 @@
+uuid: adfa40fd-d6e2-4030-894a-1bd488430dde
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.news_3_item_block
+    - field.field.component.news_3_item_block.field_viewfield
+  module:
+    - viewfield
+id: component.news_3_item_block.default
+targetEntityType: component
+bundle: news_3_item_block
+mode: default
+content:
+  field_viewfield:
+    weight: 1
+    label: hidden
+    settings:
+      view_title: hidden
+      always_build_output: 0
+      empty_view_title: hidden
+    third_party_settings: {  }
+    type: viewfield_default
+    region: content
+hidden:
+  langcode: true
+  title: true

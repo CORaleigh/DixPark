@@ -1,0 +1,9 @@
+uuid: a3684601-caa6-407f-9879-9a9104e31de4
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'JS Widget'
+type: js_widget
+description: 'Component to add any JS widget from the web ( for example a donation form, comment form etc ) '

@@ -1,0 +1,9 @@
+uuid: f5cd489c-fd09-40fc-a0e2-2a41436178f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'Single Image'
+type: single_image
+description: ''

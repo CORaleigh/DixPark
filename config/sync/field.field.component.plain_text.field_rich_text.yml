@@ -1,0 +1,21 @@
+uuid: 1006edb3-76f1-468f-a5db-8fde4bdcd899
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.plain_text
+    - field.storage.component.field_rich_text
+  module:
+    - text
+id: component.plain_text.field_rich_text
+field_name: field_rich_text
+entity_type: component
+bundle: plain_text
+label: 'Rich Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

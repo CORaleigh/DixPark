@@ -1,0 +1,7 @@
+uuid: eb4ca19f-68dd-4ef7-a338-afd36a84a6a9
+langcode: en
+status: false
+dependencies: {  }
+formId: node_tweet_form
+captchaType: default
+label: null

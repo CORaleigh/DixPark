@@ -1,0 +1,27 @@
+uuid: 6d43f1d2-14cb-421e-9bff-106cd95317e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sidebar_links.field_sidebar_link_url
+    - paragraphs.paragraphs_type.sidebar_links
+  module:
+    - link
+id: paragraph.sidebar_links.default
+targetEntityType: paragraph
+bundle: sidebar_links
+mode: default
+content:
+  field_sidebar_link_url:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

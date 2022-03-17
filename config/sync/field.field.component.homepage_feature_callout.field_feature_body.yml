@@ -1,0 +1,21 @@
+uuid: 68125daf-a9b6-4689-9042-ea3d5cd4e34b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.homepage_feature_callout
+    - field.storage.component.field_feature_body
+  module:
+    - text
+id: component.homepage_feature_callout.field_feature_body
+field_name: field_feature_body
+entity_type: component
+bundle: homepage_feature_callout
+label: 'Feature Body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,23 @@
+uuid: 4b47c08c-127c-45e4-b402-6ae78c63e88a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.text_with_title_and_expandable
+    - field.storage.component.field_body
+  module:
+    - text
+id: component.text_with_title_and_expandable.field_body
+field_name: field_body
+entity_type: component
+bundle: text_with_title_and_expandable
+label: 'Expanded Text'
+description: 'This text will be hidden until ''MORE'' is clicked'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

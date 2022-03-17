@@ -1,0 +1,9 @@
+uuid: 0fd1b51c-d335-4a12-ac39-cee9e8bc9b25
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'Single Entity'
+type: entity_
+description: ''

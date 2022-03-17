@@ -1,0 +1,54 @@
+uuid: 10e5e4f0-9315-4521-bf53-f20ec1a8cb59
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.twitter.body
+    - field.field.node.twitter.field_tweet_date
+    - field.field.node.twitter.field_tweet_link
+    - node.type.twitter
+  module:
+    - datetime
+    - link
+    - text
+    - user
+id: node.twitter.default
+targetEntityType: node
+bundle: twitter
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_tweet_date:
+    weight: 102
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_tweet_link:
+    weight: 103
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

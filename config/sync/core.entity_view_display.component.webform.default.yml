@@ -1,0 +1,52 @@
+uuid: 0df3cfbf-a48a-4f9d-886b-5ff20e6aec55
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.webform
+    - field.field.component.webform.field_webform
+    - field.field.component.webform.field_webform_description
+  module:
+    - fences
+    - field_formatter_class
+    - text
+    - webform
+id: component.webform.default
+targetEntityType: component
+bundle: webform
+mode: default
+content:
+  field_webform:
+    weight: 2
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  field_webform_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  title:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: h2
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      field_formatter_class:
+        class: ''
+hidden:
+  langcode: true

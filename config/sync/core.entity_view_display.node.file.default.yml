@@ -1,0 +1,38 @@
+uuid: da2b6ceb-51c8-490e-ab6b-3c440058dec6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.file.field_body
+    - field.field.node.file.field_file
+    - node.type.file
+  module:
+    - file
+    - text
+    - user
+id: node.file.default
+targetEntityType: node
+bundle: file
+mode: default
+content:
+  field_body:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_file:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

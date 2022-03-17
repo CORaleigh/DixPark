@@ -1,0 +1,47 @@
+uuid: 747b3c31-6087-43e6-bed4-a98d6a44eccd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3f8fc36c-ad41-4bc9-9d87-3bd759e6af28'
+  module:
+    - block_content
+    - ctools
+    - system
+  theme:
+    - avenue
+id: getdirections
+theme: avenue
+region: content
+weight: -15
+provider: null
+plugin: 'block_content:3f8fc36c-ad41-4bc9-9d87-3bd759e6af28'
+settings:
+  id: 'block_content:3f8fc36c-ad41-4bc9-9d87-3bd759e6af28'
+  label: 'Get Directions'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+      donation: donation
+      event: event
+      landing_page: landing_page
+      page: page
+      paragraphed_content_demo: paragraphed_content_demo
+      tweet: tweet
+      twitter: twitter
+      webform: webform
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: "/contact-0\r\n/contact"
+    negate: false
+    context_mapping: {  }

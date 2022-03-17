@@ -1,0 +1,20 @@
+uuid: bc96d1b2-4b0c-4cee-8d2e-475a22ee40d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - node
+id: component.field_content
+field_name: field_content
+entity_type: component
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

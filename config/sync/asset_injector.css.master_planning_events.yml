@@ -1,0 +1,13 @@
+uuid: a6b03c78-dd5e-45c9-9ba8-dd190eb20c24
+langcode: en
+status: false
+dependencies: {  }
+id: master_planning_events
+label: 'Master Planning Events'
+code: ".node--id-13 .views-field-field-event-category, .node--id-14 .views-field-field-event-category {\r\n  background-color: #68c359;\r\n}\r\n\r\n.node--id-13  .event-date, .node--id-14 .event-date{\r\n  color: #68c359;\r\n  border-bottom: 1px solid #68c359;\r\n}\r\n\r\n.node--id-13 .item-title  a, .node--id-13 .event-date .datetime:first-child, .node--id-14 .item-title  a, .node--id-14 .event-date .datetime:first-child {\r\n  color: #68c359;\r\n}\r\n\r\n\r\n\r\n"
+media: all
+nodeType: ''
+themes: {  }
+preprocess: true
+visibility: false
+pages: ''

@@ -1,0 +1,9 @@
+uuid: 54f9f76b-06d8-4c5b-baa2-cb4a1f06ce8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'Text with Title'
+type: featured_info
+description: ''

@@ -1,0 +1,21 @@
+uuid: 434fa4ae-1a38-42a3-9e36-78219f2b5c62
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.entity_
+    - field.storage.component.field_article_date
+  module:
+    - datetime
+id: component.entity_.field_article_date
+field_name: field_article_date
+entity_type: component
+bundle: entity_
+label: 'Article Date'
+description: 'Optional - add the article date here '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

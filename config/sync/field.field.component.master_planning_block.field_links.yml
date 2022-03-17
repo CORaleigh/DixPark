@@ -1,0 +1,51 @@
+uuid: 3545bd13-2c46-4177-82e1-140a858428cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.master_planning_block
+    - field.storage.component.field_links
+    - paragraphs.paragraphs_type.links
+  module:
+    - entity_reference_revisions
+id: component.master_planning_block.field_links
+field_name: field_links
+entity_type: component
+bundle: master_planning_block
+label: Links
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      links: links
+    target_bundles_drag_drop:
+      images:
+        weight: 9
+        enabled: false
+      image_text:
+        weight: 10
+        enabled: false
+      links:
+        enabled: true
+        weight: 11
+      nested_paragraph:
+        weight: 12
+        enabled: false
+      slider:
+        weight: 13
+        enabled: false
+      text:
+        weight: 14
+        enabled: false
+      text_image:
+        weight: 15
+        enabled: false
+      user:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

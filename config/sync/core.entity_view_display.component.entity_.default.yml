@@ -1,0 +1,56 @@
+uuid: bcd1f6ca-5d03-40a4-81f8-3d963b8e225c
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.entity_
+    - field.field.component.entity_.field_article_date
+    - field.field.component.entity_.field_content
+  module:
+    - datetime
+    - fences
+    - field_formatter_class
+id: component.entity_.default
+targetEntityType: component
+bundle: entity_
+mode: default
+content:
+  field_article_date:
+    weight: 0
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: 'M j, Y'
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      field_formatter_class:
+        class: ''
+    type: datetime_custom
+    region: content
+  field_content:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      field_formatter_class:
+        class: ''
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  langcode: true
+  title: true

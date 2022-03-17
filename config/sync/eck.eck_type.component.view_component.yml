@@ -1,0 +1,9 @@
+uuid: c167359b-cac5-4460-89e0-da686fe78682
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'View Component'
+type: view_component
+description: ''

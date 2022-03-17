@@ -1,0 +1,32 @@
+uuid: ea247600-56a8-479e-a3f6-9cf1a946e790
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.entity_
+    - field.storage.component.field_content
+    - node.type.article
+    - node.type.donation
+    - node.type.webform
+id: component.entity_.field_content
+field_name: field_content
+entity_type: component
+bundle: entity_
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+      donation: donation
+      webform: webform
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: article
+field_type: entity_reference

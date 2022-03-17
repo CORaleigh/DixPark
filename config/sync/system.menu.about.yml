@@ -1,0 +1,8 @@
+uuid: 4ef66e2b-4483-444f-a69f-83f99c41c2f4
+langcode: en
+status: true
+dependencies: {  }
+id: about
+label: About
+description: 'About Sidebar Menu'
+locked: false

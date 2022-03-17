@@ -1,0 +1,21 @@
+uuid: a282da77-b46e-4cd2-a33f-06aeb35a14b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tweet_date
+    - node.type.twitter
+  module:
+    - datetime
+id: node.twitter.field_tweet_date
+field_name: field_tweet_date
+entity_type: node
+bundle: twitter
+label: 'Tweet Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

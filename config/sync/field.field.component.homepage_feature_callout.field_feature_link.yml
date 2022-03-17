@@ -1,0 +1,23 @@
+uuid: 6dbf15f3-9163-47be-a95c-13019ebc0a46
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.homepage_feature_callout
+    - field.storage.component.field_feature_link
+  module:
+    - link
+id: component.homepage_feature_callout.field_feature_link
+field_name: field_feature_link
+entity_type: component
+bundle: homepage_feature_callout
+label: 'Feature Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

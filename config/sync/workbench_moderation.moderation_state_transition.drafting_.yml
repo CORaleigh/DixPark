@@ -1,0 +1,18 @@
+uuid: 2a4f5424-05ac-4951-9a57-0bc5cf8cdc95
+langcode: en
+status: true
+dependencies:
+  config:
+    - workbench_moderation.moderation_state.draft
+  enforced:
+    config: null
+  module:
+    - workbench_email
+third_party_settings:
+  workbench_email:
+    workbench_email_templates: {  }
+id: drafting_
+label: 'Keep Draft'
+stateFrom: draft
+stateTo: draft
+weight: -10

@@ -1,0 +1,9 @@
+uuid: b002ca2c-3829-4658-8b81-9729e6a41474
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'Events 3 Item Block'
+type: events_3_item_block
+description: ''

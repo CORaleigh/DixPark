@@ -1,0 +1,23 @@
+uuid: 77bd88fe-5450-4f7d-a187-4fa56d11c4d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.hero_article_
+    - field.storage.component.field_body
+  module:
+    - text
+id: component.hero_article_.field_body
+field_name: field_body
+entity_type: component
+bundle: hero_article_
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

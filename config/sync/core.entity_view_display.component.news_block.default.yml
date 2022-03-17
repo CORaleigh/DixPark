@@ -1,0 +1,59 @@
+uuid: 1c969978-321f-4742-9fbe-51f7ba2587a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.news_block
+    - field.field.component.news_block.field_more_link
+    - field.field.component.news_block.field_news_viewfield
+  module:
+    - fences
+    - field_formatter_class
+    - link
+    - viewfield
+id: component.news_block.default
+targetEntityType: component
+bundle: news_block
+mode: default
+content:
+  field_more_link:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_news_viewfield:
+    weight: 2
+    label: hidden
+    settings:
+      view_title: hidden
+      always_build_output: 0
+      empty_view_title: hidden
+    third_party_settings: {  }
+    type: viewfield_default
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: h2
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      field_formatter_class:
+        class: ''
+hidden:
+  langcode: true

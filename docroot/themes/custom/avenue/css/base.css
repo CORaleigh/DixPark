@@ -1,0 +1,390 @@
+html {
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-size: 100%;
+}
+
+body {
+  background-color: #f3f3f3;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  word-wrap: break-word;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hidden {
+  display: none;
+}
+
+/* apply a natural box model to all elements */
+*, :before, :after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#colorbox, #colorbox * {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+img {
+  border: 0; /* Removes border when inside 'a' element in IE6/7/8/9 FF3. */
+  -ms-interpolation-mode: bicubic; /* Improves image quality when scaled in IE7. */
+  width: auto; /* IE8 bug. Requires this to work properly with max-width in scaling images. */
+  max-width: 100%;
+  height: auto;
+}
+
+/* A modern clearfix for IE8 and up. Per http://css-tricks.com/snippets/css/clear-fix; */
+.group:after, .clearfix:after, .view:after, .view-content:after, .region:after, .container:after, .block:after, .views-row:after, .panel-panel:after, .center-wrapper:after, .field--label-inline:after, footer.node__meta {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Corrects overflow displayed oddly in IE9 */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+
+/* LAYOUT */
+
+.rooftop, .header, .main, .footer, .container, .region, .panel-pane, .view, .views-row, .view-header, .view-footer, .block, ul.menu li, .views-row, .block, th, td {
+  position: relative;
+}
+
+.main {
+  padding: 0;
+}
+
+
+/* TYPOGRAPHY */
+
+a {
+  text-decoration: none;
+  color: #2579C2;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover, a:active, p a {
+  color: #2579C2;
+  outline: 0;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, .site-name {
+  font-size: 1.25em;
+  font-size: 1.25rem;
+  margin: 0.5em 0;
+  margin: 1rem 0 1rem;
+  font-weight: bold;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1, .site-name {
+  font-size: 2.625em;
+  font-size: 2.625rem;
+}
+
+h2, h3 {
+  font-size: 1.875em;
+  font-size: 1.875rem;
+}
+
+
+/* COMMONLY USED STYLES */
+
+p, table, .by-line, .field {
+  margin: 0 0 1.5em;
+  margin: 0 0 1.5rem;
+}
+
+.field:last-child, .node-block .field {
+  margin-bottom: 0;
+}
+
+.block-system-main-block img, .sidebar img {
+  display: block;
+}
+
+.block-system-main-block ul, .views-field-body ul {
+
+}
+
+ul.menu {
+  margin: 0;
+  padding: 0;
+}
+
+.rooftop .block-menu ul.menu, .navigation .block-menu ul.menu, .header .block-menu ul.menu {
+  text-align: center;
+}
+
+ul.menu li {
+  display: inline-block;
+  margin: 0 0.75em;
+  margin: 0 0.75rem;
+  padding: 0;
+}
+
+.messages {
+  margin: 1.5rem 0;
+}
+
+figure {
+  margin: 1.5rem 0;
+}
+
+hr {
+  margin: 0 0 3rem 0;
+}
+
+
+/* DRUPAL TABS */
+
+nav.tabs {
+    background: #75c2f1;
+    margin: 1.5rem 0;
+}
+
+ul.tabs {
+    margin: 0;
+}
+
+nav.tabs a {
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+}
+
+.tabs a:focus, .tabs a:hover {
+    background: rgba(0,0,0,0.05);
+}
+
+.tabs a.is-active {
+    background: rgba(0,0,0,0.15);
+}
+
+
+/* VIEWS */
+
+.view-content .item-list li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.views-field-edit-node {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  font-size: 11px;
+  z-index: 2;
+}
+
+td.views-field-edit-node {
+  position: relative;
+  top: auto;
+  right: auto;
+  font-size: inherit;
+}
+
+
+/* TABLES */
+
+table {
+  table-layout:fixed;
+  width: 100%;
+  max-width: 100%;
+}
+
+th, tr, td {
+  vertical-align: top;
+  position: relative;
+}
+
+th, td, td.active {
+  padding: 1px;
+  border: 1px solid #e2e2e2;
+}
+
+th, td, td.active {
+  border: none;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+td.active {
+  background-color: rgba(255,255,255,0.5);
+}
+
+.sticky-header th, .sticky-table th {
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+  padding-right: 1em;
+  padding-right: 1rem;
+  text-align: left;
+  background-color: rgba(255,255,255,0.8);
+}
+
+table.cols-2 td {
+  width: 50%;
+}
+
+table.cols-3 td {
+  width: 33.3333%;
+}
+
+table.cols-4 td {
+  width: 25%;
+}
+
+table.cols-5 td {
+  width: 20%;
+}
+
+table.cols-6 td {
+  width: 16.6666%;
+}
+
+
+/* FORMS */
+
+label {
+  font-weight: bold;
+  font-weight: 700;
+}
+
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  border-radius: 3px;
+  margin: 0 0 0.75rem;
+  max-width: 100%;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select {
+  background-color: #fff;
+  border: 1px solid;
+  border-color: #cccccc #e2e2e2 #e2e2e2 #cccccc;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  max-width: 100%;
+}
+
+input[type="submit"], .btn, button {
+  outline: none;
+  background: #0fa2e2;
+  border: none;
+  border-bottom: 2px solid #0c87bc;
+  color: #fff;
+  font-family: Arial;
+  font-size: 0.8125rem;
+  line-height: 1;
+  padding: 0.5rem 1.5rem;
+  margin: 0;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  border-radius: 0;
+  max-width: 100%;
+
+}
+
+input[type="submit"]:hover, .btn:hover, button:hover {
+  background: #0e94cf;
+}
+
+input[type="submit"]:active, .btn:active, button:active, .btn.active {
+  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+  box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+}
+
+.description {
+  background: #fcfcfc;
+  padding: 0.75rem;
+  border: 1px solid #e2e2e2;
+  color: #aaa;
+  border-radius: 3px;
+}
+
+details {
+  border: 1px solid #e2e2e2;
+  margin: 1.5rem 0;
+  border-radius: 3px;
+  background: #fcfcfc;
+}
+
+input.form-file {
+  padding: 0.75rem;
+  border-color: #e2e2e2;
+  background: #fcfcfc;
+}
+
+.main .form-item, .main .form-actions {
+  margin: 0;
+}
+
+.main .view-filters .form-item {
+  margin-right: 1.5rem;
+}
+
+.main .form-actions {
+  padding-top: 1.5rem;
+}
+
+.main .views-exposed-form .form-actions {
+  border: none;
+
+}
+
+.webform-confirmation {
+  padding: 1.5em;
+  padding: 1.5rem;
+  margin: 0 0 1.5em 0;
+}
+
+/* Per Safari CSS Reference:
+iOS changes the appearance of buttons & controls to resemble a native apple UI.
+Add this code for comment & search forms to retain custom CSS styles:  */
+input[type="submit"], input[type="password"], input[type="text"], input[type="email"] {
+  -webkit-appearance:none;
+}
+
+.calendar-calendar .month-view .full td .inner div.day, .calendar-calendar .month-view .full td .inner div.day a{
+  width:auto
+}
+
+.calendar-calendar .month-view .full td.single-day div.monthview, .calendar-calendar .week-view .full td.single-day div.weekview, .calendar-calendar .day-view .full td.single-day div.dayview{
+  background:#f3f3f3
+}
+.calendar-calendar td .inner div.calendar div, .calendar-calendar td .inner div.calendar div a{
+  display:block;
+  font-size:14px
+}
+
+.dix-park-cal{
+  padding-top:100px
+}

@@ -1,0 +1,21 @@
+uuid: 1f593134-b96b-41ec-8856-424405614357
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.calendar
+    - field.storage.component.field_calendar_
+  module:
+    - text
+id: component.calendar.field_calendar_
+field_name: field_calendar_
+entity_type: component
+bundle: calendar
+label: 'Calendar '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

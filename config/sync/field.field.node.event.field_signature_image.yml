@@ -1,0 +1,21 @@
+uuid: acf0c374-73fc-41f2-841a-e65e1174d75b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_signature_image
+    - node.type.event
+  module:
+    - text
+id: node.event.field_signature_image
+field_name: field_signature_image
+entity_type: node
+bundle: event
+label: 'Signature Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,30 @@
+uuid: 741425f6-6a1d-47ce-88b5-ac90d96bdee1
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - paragraphs
+id: paragraph.field_title_image
+field_name: field_title_image
+entity_type: paragraph
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: 'Dix Park Logo'
+    title: 'Dorothea Dix Park '
+    width: 803
+    height: 102
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,115 @@
+uuid: 7927404f-1210-4664-ae98-b08cca3f2445
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.2_column_image_and_text
+    - field.field.component.2_column_image_and_text.field_body
+    - field.field.component.2_column_image_and_text.field_byline
+    - field.field.component.2_column_image_and_text.field_caption
+    - field.field.component.2_column_image_and_text.field_image
+  module:
+    - fences
+    - field_formatter_class
+    - field_group
+    - image
+    - text
+third_party_settings:
+  field_group:
+    group_centered:
+      children:
+        - field_image
+        - field_caption
+        - field_byline
+      parent_name: group_image_wrap
+      weight: 2
+      format_type: html_element
+      format_settings:
+        label: centered
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: centered
+      label: centered
+      region: content
+    group_image_wrap:
+      children:
+        - group_centered
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        label: 'image wrap'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: image-wrap
+      label: 'image wrap'
+      region: content
+id: component.2_column_image_and_text.default
+targetEntityType: component
+bundle: 2_column_image_and_text
+mode: default
+content:
+  field_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: right-column
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      field_formatter_class:
+        class: ''
+    type: text_default
+    region: content
+  field_byline:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_caption:
+    type: string
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_image:
+    type: image
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      field_formatter_class:
+        class: ''
+hidden:
+  langcode: true
+  search_api_excerpt: true
+  title: true

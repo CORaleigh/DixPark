@@ -1,0 +1,25 @@
+uuid: 8d0e011d-1b2d-44ab-a425-a442ec3288a3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a50229fc-ce2c-48b4-a081-492c128091b5'
+  module:
+    - block_content
+  theme:
+    - avenue
+id: mailchimpscript
+theme: avenue
+region: footer
+weight: -8
+provider: null
+plugin: 'block_content:a50229fc-ce2c-48b4-a081-492c128091b5'
+settings:
+  id: 'block_content:a50229fc-ce2c-48b4-a081-492c128091b5'
+  label: 'Stay in the Loop'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

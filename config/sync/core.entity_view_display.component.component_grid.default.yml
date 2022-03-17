@@ -1,0 +1,36 @@
+uuid: 022e71d6-8dec-4ee4-acc2-d0a440f42d58
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.component_grid
+    - field.field.component.component_grid.field_component
+  module:
+    - fences
+    - field_formatter_class
+id: component.component_grid.default
+targetEntityType: component
+bundle: component_grid
+mode: default
+content:
+  field_component:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: grid
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      field_formatter_class:
+        class: ''
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  langcode: true
+  title: true

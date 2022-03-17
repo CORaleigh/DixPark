@@ -1,0 +1,23 @@
+uuid: 48211763-bc86-48f9-aba3-b3dd8285de0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.2_column_image_and_text
+    - field.storage.component.field_body
+  module:
+    - text
+id: component.2_column_image_and_text.field_body
+field_name: field_body
+entity_type: component
+bundle: 2_column_image_and_text
+label: 'Text Column'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

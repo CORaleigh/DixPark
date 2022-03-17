@@ -1,0 +1,21 @@
+uuid: 0b0e5e05-3436-4455-9dac-c5db575e8224
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.js_widget
+    - field.storage.component.field_embed_code
+  module:
+    - text
+id: component.js_widget.field_embed_code
+field_name: field_embed_code
+entity_type: component
+bundle: js_widget
+label: 'Embed Code'
+description: 'Make sure TEXT FORMAT is set to "FULL HTML no WYSIWYG"'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

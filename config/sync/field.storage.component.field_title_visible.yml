@@ -1,0 +1,18 @@
+uuid: 0e0289df-68a3-4089-aac2-ee576ae5a941
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: component.field_title_visible
+field_name: field_title_visible
+entity_type: component
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

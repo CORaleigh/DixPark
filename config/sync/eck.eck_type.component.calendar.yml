@@ -1,0 +1,9 @@
+uuid: ba93628c-d2c6-4482-8873-cc60a349a1d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: Calendar
+type: calendar
+description: ''

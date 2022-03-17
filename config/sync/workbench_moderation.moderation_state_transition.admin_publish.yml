@@ -1,0 +1,19 @@
+uuid: db826578-ee5e-4a21-8665-358631472222
+langcode: en
+status: true
+dependencies:
+  config:
+    - workbench_moderation.moderation_state.draft
+    - workbench_moderation.moderation_state.published
+  enforced:
+    config: null
+  module:
+    - workbench_email
+third_party_settings:
+  workbench_email:
+    workbench_email_templates: {  }
+id: admin_publish
+label: 'Admin Publish'
+stateFrom: draft
+stateTo: published
+weight: -7

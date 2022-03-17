@@ -1,0 +1,47 @@
+uuid: 38d007e7-41a9-4647-909f-5baf4e38a861
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3f66568e-d19a-4bf9-ae10-1f0363921642'
+  module:
+    - block_content
+    - ctools
+    - node
+    - system
+  theme:
+    - avenue
+id: news
+theme: avenue
+region: content
+weight: -2
+provider: null
+plugin: 'block_content:3f66568e-d19a-4bf9-ae10-1f0363921642'
+settings:
+  id: 'block_content:3f66568e-d19a-4bf9-ae10-1f0363921642'
+  label: News
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: '/article/*'
+    negate: false
+    context_mapping: {  }

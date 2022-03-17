@@ -1,0 +1,79 @@
+uuid: 4f9269b5-7319-4822-9f6c-74ad23ba1636
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.master_planning_block
+    - field.field.component.master_planning_block.field_body
+    - field.field.component.master_planning_block.field_content
+    - field.field.component.master_planning_block.field_links
+    - field.field.component.master_planning_block.field_more_link
+    - field.field.component.master_planning_block.field_viewfield
+  module:
+    - entity_reference_revisions
+    - fences
+    - field_formatter_class
+    - link
+    - text
+id: component.master_planning_block.default
+targetEntityType: component
+bundle: master_planning_block
+mode: default
+content:
+  field_body:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_content:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_links:
+    type: entity_reference_revisions_entity_view
+    weight: 4
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_more_link:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: h2
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      field_formatter_class:
+        class: ''
+hidden:
+  field_viewfield: true
+  langcode: true

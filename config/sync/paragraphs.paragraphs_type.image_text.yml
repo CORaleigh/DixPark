@@ -1,0 +1,9 @@
+uuid: 9345be27-dd80-4879-8949-7e0f1c065f6b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1NKuWn63-MAY5inQNQBIVxTl3_R1V1_0kRz4XUt5uGQ
+id: image_text
+label: 'Image + Text'
+behavior_plugins: {  }

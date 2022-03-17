@@ -1,0 +1,38 @@
+uuid: 8130148e-b7e0-4010-b484-cc5958861007
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.donation.body
+    - field.field.node.donation.field_get_involved_link
+    - node.type.donation
+  module:
+    - text
+    - user
+id: node.donation.teaser
+targetEntityType: node
+bundle: donation
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  workbench_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_get_involved_link: true
+  langcode: true

@@ -1,0 +1,9 @@
+uuid: bfef14bf-0722-43b7-9776-6969ea495c9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'Text Block Row'
+type: text_block_row
+description: ''

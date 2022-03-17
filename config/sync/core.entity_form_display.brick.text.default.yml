@@ -1,0 +1,40 @@
+uuid: b2fba017-597d-4ca7-a079-b4f28b06854d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.text
+    - field.field.brick.text.field_text
+  module:
+    - text
+_core:
+  default_config_hash: j8Ywu8p38xpPLS9Rpmzn27tnvsr1uTCIPgNmDoQUOuQ
+id: brick.text.default
+targetEntityType: brick
+bundle: text
+mode: default
+content:
+  field_text:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

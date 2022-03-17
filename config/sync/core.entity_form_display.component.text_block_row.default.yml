@@ -1,0 +1,43 @@
+uuid: 39c518d1-c431-4641-9989-a0ef81c1b267
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.text_block_row
+    - field.field.component.text_block_row.field_component
+  module:
+    - inline_entity_form
+id: component.text_block_row.default
+targetEntityType: component
+bundle: text_block_row
+mode: default
+content:
+  field_component:
+    weight: 3
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

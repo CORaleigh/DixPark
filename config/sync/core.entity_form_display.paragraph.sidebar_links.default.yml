@@ -1,0 +1,27 @@
+uuid: a36536e1-a9fd-4989-b71e-892b846cd627
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sidebar_links.field_sidebar_link_url
+    - paragraphs.paragraphs_type.sidebar_links
+  module:
+    - link
+    - workbench_moderation
+id: paragraph.sidebar_links.default
+targetEntityType: paragraph
+bundle: sidebar_links
+mode: default
+content:
+  field_sidebar_link_url:
+    weight: 7
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

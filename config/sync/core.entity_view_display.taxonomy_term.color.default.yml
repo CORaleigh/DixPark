@@ -1,0 +1,35 @@
+uuid: 1d7a100a-77b8-488e-9b47-c1a4f33022d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.color.field_css_color
+    - taxonomy.vocabulary.color
+  module:
+    - color_field
+    - text
+id: taxonomy_term.color.default
+targetEntityType: taxonomy_term
+bundle: color
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_css_color:
+    weight: 1
+    label: above
+    settings:
+      opacity: '1'
+      shape: square
+      width: '50'
+      height: '50'
+    third_party_settings: {  }
+    type: color_field_formatter_swatch
+    region: content
+hidden:
+  langcode: true

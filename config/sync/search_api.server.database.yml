@@ -1,0 +1,17 @@
+uuid: 17626f16-0e61-43b9-bb09-e71d1fbcc8d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: database
+name: Database
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  autocomplete:
+    suggest_suffix: true
+    suggest_words: true
+  matching: words

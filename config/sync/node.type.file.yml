@@ -1,0 +1,17 @@
+uuid: 4e6405dc-ac43-40bf-aa43-556eb93ee384
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: File
+type: file
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

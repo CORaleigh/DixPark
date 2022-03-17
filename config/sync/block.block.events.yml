@@ -1,0 +1,41 @@
+uuid: 62a43c59-1b74-49ce-b877-83586dafda1a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:275fd52f-1bc4-4d3e-9025-61eadc2afc84'
+  module:
+    - block_content
+    - ctools
+    - node
+  theme:
+    - avenue
+id: events
+theme: avenue
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:275fd52f-1bc4-4d3e-9025-61eadc2afc84'
+settings:
+  id: 'block_content:275fd52f-1bc4-4d3e-9025-61eadc2afc84'
+  label: Events
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      event: event
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  node_type:
+    id: node_type
+    bundles:
+      event: event
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

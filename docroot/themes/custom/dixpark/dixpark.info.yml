@@ -1,0 +1,20 @@
+name: Dix Park
+type: theme
+description: This is the dix park sub theme of avenue
+core: 8.x
+# Defines the base theme
+base theme: avenue
+# Defines libraries group in which we can add css/js.
+libraries:
+  - dixpark/css
+# Regions
+regions:
+  rooftop:          Rooftop
+  navigation:       Navigation
+  header:           Header
+  highlighted:      Highlighted
+  hero:             Hero
+  content:          Content  # content region is required
+  sidebar_first:    Sidebar First
+  content_bottom:   Content Bottom
+  footer:           Footer

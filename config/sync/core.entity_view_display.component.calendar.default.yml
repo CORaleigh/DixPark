@@ -1,0 +1,35 @@
+uuid: 4665bfff-36c2-41a9-a47a-280a21d180d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.calendar
+    - field.field.component.calendar.field_calendar_
+  module:
+    - fences
+    - field_formatter_class
+    - text
+id: component.calendar.default
+targetEntityType: component
+bundle: calendar
+mode: default
+content:
+  field_calendar_:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: calendar-container
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      field_formatter_class:
+        class: ''
+    type: text_default
+    region: content
+hidden:
+  langcode: true
+  title: true

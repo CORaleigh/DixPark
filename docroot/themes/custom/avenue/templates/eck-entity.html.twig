@@ -1,0 +1,27 @@
+{% set cname = theme_hook_suggestions[3]|replace({'eck_entity__component__':'com-'}) %}
+
+{% set grid = '' %}
+
+
+{%
+  set classes = [
+    'component',
+    cname|clean_class
+  ]
+%}
+
+
+<div{{ attributes.addClass(classes) }}>
+   <div class="inner clearfix">
+      {% if (cname == 'com-component_grid' or cname == 'com-view_grid') %}
+      <div class="grid">
+        <div class="column"></div>
+        <div class="spacer"></div>
+      {% endif %}
+        {{ content }}
+      {% if (cname == 'com-component_grid' or cname == 'com-view_grid') %}
+    </div> <!---.grid--->
+      {% endif %}
+
+  </div>
+</div>

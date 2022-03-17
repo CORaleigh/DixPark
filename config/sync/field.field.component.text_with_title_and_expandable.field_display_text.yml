@@ -1,0 +1,21 @@
+uuid: ded16da4-a594-4b70-afa2-0aa3b50a6faf
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.text_with_title_and_expandable
+    - field.storage.component.field_display_text
+  module:
+    - text
+id: component.text_with_title_and_expandable.field_display_text
+field_name: field_display_text
+entity_type: component
+bundle: text_with_title_and_expandable
+label: 'Display Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

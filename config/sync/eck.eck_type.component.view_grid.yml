@@ -1,0 +1,9 @@
+uuid: 5f68e616-cac8-41ec-9a75-cfd1ca63e653
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'View Grid'
+type: view_grid
+description: ''

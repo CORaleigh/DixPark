@@ -1,0 +1,58 @@
+uuid: a3b597de-2c04-4a32-a124-14e261f625d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.image_with_text_and_link
+    - field.storage.component.field_image_text_link
+    - paragraphs.paragraphs_type.image_text_link
+  module:
+    - entity_reference_revisions
+id: component.image_with_text_and_link.field_image_text_link
+field_name: field_image_text_link
+entity_type: component
+bundle: image_with_text_and_link
+label: 'Image + Text + Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      image_text_link: image_text_link
+    target_bundles_drag_drop:
+      images:
+        weight: 11
+        enabled: false
+      image_text:
+        weight: 12
+        enabled: false
+      image_text_link:
+        enabled: true
+        weight: 13
+      links:
+        weight: 14
+        enabled: false
+      nested_paragraph:
+        weight: 15
+        enabled: false
+      sidebar_links:
+        weight: 16
+        enabled: false
+      slider:
+        weight: 17
+        enabled: false
+      text:
+        weight: 18
+        enabled: false
+      text_image:
+        weight: 19
+        enabled: false
+      user:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

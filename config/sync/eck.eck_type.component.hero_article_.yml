@@ -1,0 +1,9 @@
+uuid: 708f572a-bdc5-40db-90e0-4463181aa0ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'Hero Article'
+type: hero_article_
+description: "Top Article on the Page\r\n"

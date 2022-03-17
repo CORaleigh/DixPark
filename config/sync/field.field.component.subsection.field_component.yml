@@ -1,0 +1,58 @@
+uuid: 8e36cf18-c39b-4aa8-86d0-a9d3d2049fbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.2_column_image_and_text
+    - eck.eck_type.component.article_teaser_block
+    - eck.eck_type.component.entity_
+    - eck.eck_type.component.events_3_item_block
+    - eck.eck_type.component.featured_info
+    - eck.eck_type.component.hero
+    - eck.eck_type.component.hero_article_
+    - eck.eck_type.component.js_widget
+    - eck.eck_type.component.news_3_item_block
+    - eck.eck_type.component.plain_text
+    - eck.eck_type.component.single_image
+    - eck.eck_type.component.subsection
+    - eck.eck_type.component.text_block
+    - eck.eck_type.component.text_block_row
+    - eck.eck_type.component.text_with_title_and_expandable
+    - eck.eck_type.component.view_grid
+    - eck.eck_type.component.webform
+    - field.storage.component.field_component
+id: component.subsection.field_component
+field_name: field_component
+entity_type: component
+bundle: subsection
+label: Component
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:component'
+  handler_settings:
+    target_bundles:
+      2_column_image_and_text: 2_column_image_and_text
+      article_teaser_block: article_teaser_block
+      events_3_item_block: events_3_item_block
+      hero_article_: hero_article_
+      hero: hero
+      js_widget: js_widget
+      news_3_item_block: news_3_item_block
+      plain_text: plain_text
+      entity_: entity_
+      single_image: single_image
+      text_block: text_block
+      text_block_row: text_block_row
+      featured_info: featured_info
+      text_with_title_and_expandable: text_with_title_and_expandable
+      view_grid: view_grid
+      webform: webform
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: 2_column_image_and_text
+field_type: entity_reference

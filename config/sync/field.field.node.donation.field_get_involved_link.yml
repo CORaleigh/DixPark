@@ -1,0 +1,28 @@
+uuid: 8a882228-1ba7-44ea-af96-ecbdef8f7944
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_get_involved_link
+    - node.type.donation
+  module:
+    - link
+id: node.donation.field_get_involved_link
+field_name: field_get_involved_link
+entity_type: node
+bundle: donation
+label: 'Get Involved Link'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'entity:node/14'
+    title: 'Get Involved '
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 2
+field_type: link

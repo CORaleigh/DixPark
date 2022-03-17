@@ -1,0 +1,9 @@
+uuid: 2230c4a1-3ece-4f1d-8be0-e09fbb9f8669
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'Homepage Secondary Region'
+type: homepage_secondary_region
+description: ''

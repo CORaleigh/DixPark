@@ -1,0 +1,30 @@
+uuid: c6db1e4c-1c41-4896-8cbe-d3b31b3d79dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.get_involved_block
+    - field.storage.component.field_content
+    - node.type.donation
+    - node.type.webform
+id: component.get_involved_block.field_content
+field_name: field_content
+entity_type: component
+bundle: get_involved_block
+label: Entity
+description: 'You can add a Donation article or Webform with this form '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      donation: donation
+      webform: webform
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: donation
+field_type: entity_reference

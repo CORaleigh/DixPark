@@ -1,0 +1,9 @@
+uuid: c56c9bac-4dc9-4e53-8384-34702645163c
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'News Block'
+type: news_block
+description: ''

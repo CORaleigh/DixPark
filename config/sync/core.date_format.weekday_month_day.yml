@@ -1,0 +1,8 @@
+uuid: eb24cdb0-6c25-4f42-bd60-44b1da7bb38d
+langcode: en
+status: true
+dependencies: {  }
+id: weekday_month_day
+label: 'Weekday Month Day '
+locked: false
+pattern: 'l F j'

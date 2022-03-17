@@ -1,0 +1,15 @@
+uuid: 62be7b28-2605-4b0e-8047-23dc6f5c8a82
+langcode: en
+status: true
+dependencies: {  }
+name: banner
+label: Banner
+effects:
+  622aaac4-1903-43b5-b642-5fe18586e8ec:
+    uuid: 622aaac4-1903-43b5-b642-5fe18586e8ec
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 500
+      anchor: center-center

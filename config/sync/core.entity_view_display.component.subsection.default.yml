@@ -1,0 +1,24 @@
+uuid: d7454426-9b1d-456e-9af3-6aaeb2b2d5de
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.subsection
+    - field.field.component.subsection.field_component
+id: component.subsection.default
+targetEntityType: component
+bundle: subsection
+mode: default
+content:
+  field_component:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  langcode: true
+  title: true

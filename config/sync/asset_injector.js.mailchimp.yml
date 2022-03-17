@@ -1,0 +1,14 @@
+uuid: 5fab1898-e3fc-4b53-ac71-46c6e5b6a67b
+langcode: en
+status: false
+dependencies: {  }
+id: mailchimp
+label: Mailchimp
+code: '<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/5fd6a219e99654c36782c0dfa/1d79f78fdd72208805904c915.js");</script>'
+nodeType: ''
+themes: {  }
+jquery: false
+header: false
+preprocess: false
+visibility: false
+pages: ''

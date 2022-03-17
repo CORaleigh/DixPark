@@ -1,0 +1,8 @@
+uuid: f6c1a2ba-a820-47d0-9716-9a2896e317af
+langcode: en
+status: true
+dependencies: {  }
+id: master-planning
+label: 'Master Planning'
+description: 'Master Planning Sidebar Menu'
+locked: false

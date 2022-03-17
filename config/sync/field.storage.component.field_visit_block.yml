@@ -1,0 +1,21 @@
+uuid: 9b29dd2b-2242-4b26-b453-f797179cf53d
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - viewfield
+    - views
+id: component.field_visit_block
+field_name: field_visit_block
+entity_type: component
+type: viewfield
+settings:
+  target_type: view
+module: viewfield
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

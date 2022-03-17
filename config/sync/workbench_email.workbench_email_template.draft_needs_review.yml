@@ -1,0 +1,29 @@
+uuid: 8b709e01-a148-4a67-bb1e-652133d4b4c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+    - node.type.donation
+    - node.type.event
+    - user.role.administrator
+    - user.role.editor
+id: draft_needs_review
+label: 'Draft Needs Review'
+subject: 'A new draft needs review'
+recipient_types:
+  role:
+    id: role
+    provider: workbench_email
+    status: true
+    settings:
+      roles:
+        administrator: administrator
+        editor: editor
+bundles:
+  'node:article': 'node:article'
+  'node:donation': 'node:donation'
+  'node:event': 'node:event'
+body:
+  value: "<p><a href=\"[node:edit-url]\">\"[node:title]\"</a> is ready for review.&nbsp;<br />\r\n&nbsp;</p>\r\n\r\n<p>Go to <a href=\"[site:url]/admin/workbench\">your workbench</a>.</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+  format: full_html

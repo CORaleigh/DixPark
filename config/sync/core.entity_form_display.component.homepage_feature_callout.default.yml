@@ -1,0 +1,57 @@
+uuid: 3293ec0f-18fe-4a68-a0f0-ed4be1beecd3
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.homepage_feature_callout
+    - field.field.component.homepage_feature_callout.field_feature_body
+    - field.field.component.homepage_feature_callout.field_feature_image
+    - field.field.component.homepage_feature_callout.field_feature_link
+  module:
+    - link
+    - media_library
+    - text
+id: component.homepage_feature_callout.default
+targetEntityType: component
+bundle: homepage_feature_callout
+mode: default
+content:
+  field_feature_body:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_feature_image:
+    type: media_library_widget
+    weight: 3
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_feature_link:
+    weight: 5
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

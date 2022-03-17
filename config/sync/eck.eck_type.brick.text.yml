@@ -1,0 +1,11 @@
+uuid: 32a991c0-5d19-4839-815c-b960937cebbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+_core:
+  default_config_hash: Id27sTZzRMR3wBrR6AFLynD2zWmYc-hqRVFId2yeMIw
+name: Text
+type: text
+description: ''

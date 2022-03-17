@@ -1,0 +1,25 @@
+uuid: ce7fcd18-0301-433e-954c-a3a0e38ba6f7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8b056bf5-c8dc-42d0-b455-214498ac264e'
+  module:
+    - block_content
+  theme:
+    - avenue
+id: avenue_c2017
+theme: avenue
+region: footer
+weight: -10
+provider: null
+plugin: 'block_content:8b056bf5-c8dc-42d0-b455-214498ac264e'
+settings:
+  id: 'block_content:8b056bf5-c8dc-42d0-b455-214498ac264e'
+  label: '©[current-date:custom:Y]'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

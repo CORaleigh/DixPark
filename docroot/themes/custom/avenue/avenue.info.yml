@@ -1,0 +1,24 @@
+name: Avenue
+type: theme
+description: A lightweight clean theme created by NYC Drupal developers, Div. www.div.digital
+core: 8.x
+base theme: classy
+screenshot: screenshot.png
+
+libraries:
+  - avenue/global-css
+
+regions:
+  rooftop:          Rooftop
+  navigation:       Navigation
+  header:           Header
+  highlighted:      Highlighted
+  hero:             Hero
+  content:          Content  # content region is required
+  sidebar_first:    Sidebar First
+  content_bottom:   Content Bottom
+  footer:           Footer
+
+ckeditor_stylesheets:
+ - css/base.css
+ - css/custom.css

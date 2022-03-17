@@ -1,0 +1,40 @@
+uuid: 8d261526-27b2-41f7-8d7d-d1a6d3365dcf
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.hero_article_
+    - field.field.component.hero_article_.field_body
+  module:
+    - text
+id: component.hero_article_.default
+targetEntityType: component
+bundle: hero_article_
+mode: default
+content:
+  field_body:
+    weight: 4
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

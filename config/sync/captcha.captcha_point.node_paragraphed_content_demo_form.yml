@@ -1,0 +1,7 @@
+uuid: f7c2d700-addd-43b6-a143-070914ecd9f7
+langcode: en
+status: false
+dependencies: {  }
+formId: node_paragraphed_content_demo_form
+captchaType: default
+label: null

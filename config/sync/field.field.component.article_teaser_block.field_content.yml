@@ -1,0 +1,28 @@
+uuid: 8c6f941c-bf9e-42b4-a278-7b026976f64a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.article_teaser_block
+    - field.storage.component.field_content
+    - node.type.article
+id: component.article_teaser_block.field_content
+field_name: field_content
+entity_type: component
+bundle: article_teaser_block
+label: Article
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

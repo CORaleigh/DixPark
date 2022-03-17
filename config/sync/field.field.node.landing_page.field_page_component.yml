@@ -1,0 +1,21 @@
+uuid: 39fd18ac-744d-4bb0-93f4-1b280acb48e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_component
+    - node.type.landing_page
+id: node.landing_page.field_page_component
+field_name: field_page_component
+entity_type: node
+bundle: landing_page
+label: 'Page Component'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:component'
+  handler_settings: {  }
+field_type: entity_reference

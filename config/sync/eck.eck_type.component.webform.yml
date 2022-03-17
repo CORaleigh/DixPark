@@ -1,0 +1,9 @@
+uuid: 3a6bd51b-abde-49e9-8d9d-629f51f00f26
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: Webform
+type: webform
+description: ''

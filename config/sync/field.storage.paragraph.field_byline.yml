@@ -1,0 +1,21 @@
+uuid: 355c579d-b366-4e1e-adfd-ad675b79cc48
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_byline
+field_name: field_byline
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

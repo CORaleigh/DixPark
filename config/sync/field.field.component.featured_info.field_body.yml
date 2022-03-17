@@ -1,0 +1,23 @@
+uuid: e30bdee7-5cba-4f0e-90b0-537a10b820e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.featured_info
+    - field.storage.component.field_body
+  module:
+    - text
+id: component.featured_info.field_body
+field_name: field_body
+entity_type: component
+bundle: featured_info
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

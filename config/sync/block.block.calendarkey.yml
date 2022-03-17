@@ -1,0 +1,31 @@
+uuid: becbf7da-6dc6-4157-bf87-6d8b67b2f6dc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:709e4d4a-5617-4cf0-a5f9-17e7907b3ca8'
+  module:
+    - block_content
+    - system
+  theme:
+    - avenue
+id: calendarkey
+theme: avenue
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:709e4d4a-5617-4cf0-a5f9-17e7907b3ca8'
+settings:
+  id: 'block_content:709e4d4a-5617-4cf0-a5f9-17e7907b3ca8'
+  label: 'Calendar Key'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /calendar-view
+    negate: false
+    context_mapping: {  }

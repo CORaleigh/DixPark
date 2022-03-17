@@ -1,0 +1,19 @@
+uuid: 4cf09ce3-c83b-4d6f-ba3e-6447563f8f84
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.2_column_image_and_text
+    - field.storage.component.field_byline
+id: component.2_column_image_and_text.field_byline
+field_name: field_byline
+entity_type: component
+bundle: 2_column_image_and_text
+label: Byline
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

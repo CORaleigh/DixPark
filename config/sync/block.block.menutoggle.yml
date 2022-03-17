@@ -1,0 +1,25 @@
+uuid: a0a4db95-3245-45ed-ab19-d4238a764644
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4c21f312-4854-43c3-b0ed-24ab744b6a82'
+  module:
+    - block_content
+  theme:
+    - avenue
+id: menutoggle
+theme: avenue
+region: header
+weight: -10
+provider: null
+plugin: 'block_content:4c21f312-4854-43c3-b0ed-24ab744b6a82'
+settings:
+  id: 'block_content:4c21f312-4854-43c3-b0ed-24ab744b6a82'
+  label: 'Menu Toggle'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

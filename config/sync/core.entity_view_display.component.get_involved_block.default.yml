@@ -1,0 +1,75 @@
+uuid: e1ef2b7a-2c3c-4ba3-8b07-ffd86a56868f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.get_involved_block
+    - field.field.component.get_involved_block.field_body
+    - field.field.component.get_involved_block.field_content
+    - field.field.component.get_involved_block.field_more_link
+  module:
+    - fences
+    - field_formatter_class
+    - link
+    - text
+id: component.get_involved_block.default
+targetEntityType: component
+bundle: get_involved_block
+mode: default
+content:
+  field_body:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_content:
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      field_formatter_class:
+        class: ''
+    type: entity_reference_entity_view
+    region: content
+  field_more_link:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: h2
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      field_formatter_class:
+        class: ''
+hidden:
+  langcode: true

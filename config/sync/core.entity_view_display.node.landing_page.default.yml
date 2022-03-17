@@ -1,0 +1,30 @@
+uuid: 371145aa-d508-473f-9d38-8b01c60599a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.landing_page.field_page_component
+    - node.type.landing_page
+  module:
+    - user
+id: node.landing_page.default
+targetEntityType: node
+bundle: landing_page
+mode: default
+content:
+  field_page_component:
+    weight: 101
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

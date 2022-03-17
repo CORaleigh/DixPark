@@ -1,0 +1,23 @@
+uuid: 700b7409-2350-49b0-b8a1-05a27dab3aa0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_links_to
+    - paragraphs.paragraphs_type.slider
+  module:
+    - link
+id: paragraph.slider.field_links_to
+field_name: field_links_to
+entity_type: paragraph
+bundle: slider
+label: 'Links to'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link
