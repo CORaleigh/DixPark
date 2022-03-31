@@ -5633,6 +5633,89 @@
         }
     },
     {
+        "name": "drupal/pantheon_advanced_page_cache",
+        "version": "1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/pantheon_advanced_page_cache.git",
+            "reference": "8.x-1.2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/pantheon_advanced_page_cache-8.x-1.2.zip",
+            "reference": "8.x-1.2",
+            "shasum": "265f738df7e0d094f43b4f7a5b31ac3c5d799316"
+        },
+        "require": {
+            "drupal/core": "^8 || ^9"
+        },
+        "require-dev": {
+            "drupal/coder": "^8.2",
+            "drupal/drupal-extension": "^3.3",
+            "phpunit/phpunit": "^6.3"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "drupal": {
+                "version": "8.x-1.2",
+                "datestamp": "1611003910",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "PantheonSystems\\CDNBehatHelpers\\": "tests/behat/helper_classes/"
+            }
+        },
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "scripts": {
+            "codesniff": [
+                "phpcs --report=full --extensions=php,module,inc,theme,info,install --standard=vendor/drupal/coder/coder_sniffer/Drupal src",
+                "phpcs --report=full --extensions=php,module,inc,theme,info,install --standard=vendor/drupal/coder/coder_sniffer/Drupal tests/modules",
+                "phpcs  tests/behat  --standard=PSR2"
+            ],
+            "phpcbf": [
+                "phpcbf --report=full --extensions=php,module,inc,theme,info,install --standard=vendor/drupal/coder/coder_sniffer/Drupal src",
+                "phpcbf --report=full --extensions=php,module,inc,theme,info,install --standard=vendor/drupal/coder/coder_sniffer/Drupal tests/modules",
+                "phpcbf  tests/behat  --standard=PSR2"
+            ],
+            "phpunit": [
+                "phpunit tests --colors=always"
+            ]
+        },
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Ari Gold",
+                "homepage": "https://www.drupal.org/user/329006"
+            },
+            {
+                "name": "David Strauss",
+                "homepage": "https://www.drupal.org/user/93254"
+            },
+            {
+                "name": "greg.1.anderson",
+                "homepage": "https://www.drupal.org/user/438598"
+            },
+            {
+                "name": "stevector",
+                "homepage": "https://www.drupal.org/user/179805"
+            }
+        ],
+        "description": "Advanced page cache capabilities for Pantheon.",
+        "homepage": "https://www.drupal.org/project/pantheon_advanced_page_cache",
+        "support": {
+            "source": "https://git.drupalcode.org/project/pantheon_advanced_page_cache"
+        }
+    },
+    {
         "name": "drupal/paragraphs",
         "version": "1.12.0",
         "version_normalized": "1.12.0.0",
@@ -5837,6 +5920,134 @@
         "homepage": "https://www.drupal.org/project/redirect",
         "support": {
             "source": "https://git.drupalcode.org/project/redirect"
+        }
+    },
+    {
+        "name": "drupal/redis",
+        "version": "1.5.0",
+        "version_normalized": "1.5.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/redis.git",
+            "reference": "8.x-1.5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/redis-8.x-1.5.zip",
+            "reference": "8.x-1.5",
+            "shasum": "4283333dc2bf405045765b83ca662acc409a6543"
+        },
+        "require": {
+            "drupal/core": "^8.8 || ^9"
+        },
+        "suggest": {
+            "predis/predis": "^1.1.1"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "drupal": {
+                "version": "8.x-1.5",
+                "datestamp": "1609972488",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Drupal\\redis\\": "src"
+            }
+        },
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Berdir",
+                "homepage": "https://www.drupal.org/user/214652"
+            },
+            {
+                "name": "pounard",
+                "homepage": "https://www.drupal.org/user/240164"
+            }
+        ],
+        "description": "Integration of Drupal with the Redis key-value store.",
+        "homepage": "https://www.drupal.org/project/redis",
+        "support": {
+            "source": "https://git.drupalcode.org/project/redis"
+        }
+    },
+    {
+        "name": "drupal/reroute_email",
+        "version": "2.1.1",
+        "version_normalized": "2.1.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/reroute_email.git",
+            "reference": "2.1.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/reroute_email-2.1.1.zip",
+            "reference": "2.1.1",
+            "shasum": "a3ed4920867d04aa446a75f349ade90e31fd1926"
+        },
+        "require": {
+            "drupal/core": "^8.8 || ^9"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "drupal": {
+                "version": "2.1.1",
+                "datestamp": "1648587118",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "B-Prod",
+                "homepage": "https://www.drupal.org/user/407852"
+            },
+            {
+                "name": "DYdave",
+                "homepage": "https://www.drupal.org/user/467284"
+            },
+            {
+                "name": "Devaraj johnson",
+                "homepage": "https://www.drupal.org/user/2698767"
+            },
+            {
+                "name": "bohart",
+                "homepage": "https://www.drupal.org/user/289861"
+            },
+            {
+                "name": "kbahey",
+                "homepage": "https://www.drupal.org/user/4063"
+            },
+            {
+                "name": "rfay",
+                "homepage": "https://www.drupal.org/user/30906"
+            },
+            {
+                "name": "wafaa",
+                "homepage": "https://www.drupal.org/user/50133"
+            }
+        ],
+        "description": "Reroutes emails send from the site to a predefined email. Useful for test sites.",
+        "homepage": "https://www.drupal.org/project/reroute_email",
+        "support": {
+            "source": "https://git.drupalcode.org/project/reroute_email"
         }
     },
     {
@@ -10874,8 +11085,7 @@
                 "url": "https://github.com/sebastianbergmann",
                 "type": "github"
             }
-        ],
-        "abandoned": true
+        ]
     },
     {
         "name": "sebastian/type",
@@ -14933,7 +15143,8 @@
                 "email": "bschussek@gmail.com"
             }
         ],
-        "description": "A robust cross-platform utility for normalizing, comparing and modifying file paths."
+        "description": "A robust cross-platform utility for normalizing, comparing and modifying file paths.",
+        "abandoned": "symfony/filesystem"
     },
     {
         "name": "zaporylie/composer-drupal-optimizations",

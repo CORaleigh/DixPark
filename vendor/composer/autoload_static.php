@@ -137,6 +137,7 @@ class ComposerStaticInitb762484c1ba66030f7e4dd5ea145a60f
             'Prophecy\\' => 9,
             'PhpParser\\' => 10,
             'PhpOption\\' => 10,
+            'PantheonSystems\\CDNBehatHelpers\\' => 32,
         ),
         'M' => 
         array (
@@ -176,6 +177,7 @@ class ComposerStaticInitb762484c1ba66030f7e4dd5ea145a60f
         array (
             'Drush\\Internal\\' => 15,
             'Drush\\' => 6,
+            'Drupal\\redis\\' => 13,
             'Drupal\\Driver\\' => 14,
             'Drupal\\Core\\' => 12,
             'Drupal\\Console\\Core\\' => 20,
@@ -472,6 +474,10 @@ class ComposerStaticInitb762484c1ba66030f7e4dd5ea145a60f
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
         ),
+        'PantheonSystems\\CDNBehatHelpers\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/docroot/modules/contrib/pantheon_advanced_page_cache/tests/behat/helper_classes',
+        ),
         'Masterminds\\' => 
         array (
             0 => __DIR__ . '/..' . '/masterminds/html5/src',
@@ -555,6 +561,10 @@ class ComposerStaticInitb762484c1ba66030f7e4dd5ea145a60f
         'Drush\\' => 
         array (
             0 => __DIR__ . '/..' . '/drush/drush/src',
+        ),
+        'Drupal\\redis\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/docroot/modules/contrib/redis/src',
         ),
         'Drupal\\Driver\\' => 
         array (
