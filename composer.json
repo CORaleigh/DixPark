@@ -74,6 +74,7 @@
         "drupal/workbench_moderation": "^1.5",
         "drupal/workbench_moderation_actions": "^1.0@alpha",
         "drush/drush": "^9.7.1 | ^10.0.0",
+        "pantheon-systems/drupal-integrations": "^8",
         "vlucas/phpdotenv": "^4.0",
         "webflo/drupal-finder": "^1.0.0",
         "zaporylie/composer-drupal-optimizations": "^1.0"
@@ -117,7 +118,10 @@
         "drupal-scaffold": {
             "locations": {
                 "web-root": "docroot/"
-            }
+            },
+            "allowed-packages": [
+                "pantheon-systems/drupal-integrations"
+            ]
         },
         "installer-paths": {
             "docroot/core": ["type:drupal-core"],
