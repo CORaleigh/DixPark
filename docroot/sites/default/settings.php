@@ -16,6 +16,13 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  */
 include __DIR__ . "/settings.pantheon.php";
 
+$settings['hash_salt'] = 'sw-IH90dC0XvsFKF7r6C1ZBRwvxnzwz9BBQOvsW2FkPmuDKURZb4bsadmXs7lg6KlMHsibWFRA';
+
+/**
+* Define the configuration directory.
+*/
+$settings['config_sync_directory'] = dirname(DRUPAL_ROOT) . '/config/sync/'; 
+
 /**
  * If there is a local settings file, then include it
  */
