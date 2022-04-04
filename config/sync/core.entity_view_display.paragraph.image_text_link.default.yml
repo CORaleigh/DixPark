@@ -1,4 +1,4 @@
-uuid: f70cf2a2-e61a-4808-8620-f8fa16f6bd4a
+uuid: f3977522-5c95-4a1e-b8f6-361464968d3f
 langcode: en
 status: true
 dependencies:
@@ -15,7 +15,7 @@ bundle: image_text_link
 mode: default
 content:
   field_button:
-    weight: 2
+    weight: 1
     label: hidden
     settings:
       trim_length: 80
@@ -27,7 +27,7 @@ content:
     type: link
     region: content
   field_text:
-    weight: 1
+    weight: 0
     label: hidden
     settings: {  }
     third_party_settings: {  }

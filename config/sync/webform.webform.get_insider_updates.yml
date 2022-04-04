@@ -14,7 +14,28 @@ id: get_insider_updates
 title: 'Get Insider Updates'
 description: 'Alternative to Mailchimp form'
 category: ''
-elements: "fname:\n  '#type': textfield\n  '#title': FNAME\n  '#title_display': invisible\n  '#placeholder': 'First Name'\nlname:\n  '#type': textfield\n  '#title': LNAME\n  '#title_display': invisible\n  '#placeholder': 'Last Name'\nemail:\n  '#type': email\n  '#title': Email\n  '#title_display': invisible\n  '#description_display': invisible\n  '#placeholder': Email\n  '#required': true\nactions:\n  '#type': webform_actions\n  '#title': Subscribe\n  '#submit__label': Subscribe"
+elements: |-
+  fname:
+    '#type': textfield
+    '#title': FNAME
+    '#title_display': invisible
+    '#placeholder': 'First Name'
+  lname:
+    '#type': textfield
+    '#title': LNAME
+    '#title_display': invisible
+    '#placeholder': 'Last Name'
+  email:
+    '#type': email
+    '#title': Email
+    '#title_display': invisible
+    '#description_display': invisible
+    '#placeholder': Email
+    '#required': true
+  actions:
+    '#type': webform_actions
+    '#title': Subscribe
+    '#submit__label': Subscribe
 css: ''
 javascript: ''
 settings:
@@ -26,7 +47,7 @@ settings:
   page: false
   page_submit_path: ''
   page_confirm_path: ''
-  page_admin_theme: false
+  page_theme_name: ''
   form_title: both
   form_submit_once: false
   form_exception_message: ''
@@ -35,7 +56,7 @@ settings:
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
-  form_remote_addr: true
+  form_disable_remote_addr: false
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
@@ -56,6 +77,11 @@ settings:
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
   submission_label: ''
   submission_log: false
   submission_views: {  }
@@ -81,11 +107,19 @@ settings:
   wizard_progress_percentage: false
   wizard_progress_link: false
   wizard_progress_states: false
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
   wizard_start_label: ''
   wizard_preview_link: false
   wizard_confirmation: true
   wizard_confirmation_label: ''
   wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -131,6 +165,8 @@ settings:
   results_customize: false
   token_view: false
   token_update: false
+  token_delete: false
+  serial_disabled: false
 access:
   create:
     roles:
@@ -182,6 +218,7 @@ handlers:
   mailchimp:
     id: mailchimp
     label: MailChimp
+    notes: ''
     handler_id: mailchimp
     status: true
     conditions: {  }

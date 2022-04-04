@@ -7,9 +7,11 @@ dependencies:
     - field.field.node.event.field_datetime
     - field.field.node.event.field_event_category
     - field.field.node.event.field_location
-    - field.field.node.event.field_signature_image
-    - field.field.node.event.field_spotlight_event
+    - field.field.node.event.field_signature_description
+    - field.field.node.event.field_signature_event
+    - field.field.node.event.field_signature_media
     - field.field.node.event.field_tags
+    - field.field.node.event.field_teaser_image
     - node.type.event
   module:
     - datetime
@@ -72,12 +74,30 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-  field_signature_image:
+  field_signature_description:
     weight: 6
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
+  field_signature_media:
+    type: entity_reference_entity_view
+    weight: 7
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_teaser_image:
+    type: entity_reference_entity_view
+    weight: 8
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
     region: content
   workbench_moderation_control:
     weight: 0
@@ -85,7 +105,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_spotlight_event: true
+  field_signature_event: true
   field_tags: true
   langcode: true
   links: true

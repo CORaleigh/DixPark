@@ -1,4 +1,4 @@
-uuid: 3293ec0f-18fe-4a68-a0f0-ed4be1beecd3
+uuid: 19262d14-4d45-4c65-8e35-c236c402c337
 langcode: en
 status: true
 dependencies:
@@ -17,7 +17,7 @@ bundle: homepage_feature_callout
 mode: default
 content:
   field_feature_body:
-    weight: 4
+    weight: 2
     settings:
       rows: 5
       placeholder: ''
@@ -26,32 +26,26 @@ content:
     region: content
   field_feature_image:
     type: media_library_widget
-    weight: 3
+    weight: 1
     settings:
       media_types: {  }
     third_party_settings: {  }
     region: content
   field_feature_link:
-    weight: 5
+    weight: 3
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
     region: content
-  langcode:
-    type: language_select
-    weight: 2
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  langcode: true

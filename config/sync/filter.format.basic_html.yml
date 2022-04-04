@@ -2,8 +2,6 @@ uuid: fd120377-e4e5-4d2c-bae2-643c2ccdb244
 langcode: en
 status: true
 dependencies:
-  config:
-    - core.entity_view_mode.media.media_library
   module:
     - editor
     - media
@@ -52,9 +50,6 @@ filters:
     status: true
     weight: 100
     settings:
-      default_view_mode: media_library
-      allowed_media_types:
-        image: image
-        video: video
-      allowed_view_modes:
-        media_library: media_library
+      default_view_mode: default
+      allowed_media_types: {  }
+      allowed_view_modes: {  }

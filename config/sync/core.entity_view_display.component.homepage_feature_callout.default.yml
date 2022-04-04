@@ -1,4 +1,4 @@
-uuid: 25f4424b-dce4-4d35-9c1b-b242dd70a77e
+uuid: bcfe1fe9-730a-4c46-bc3a-68dde2b4da37
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,6 @@ dependencies:
     - field.field.component.homepage_feature_callout.field_feature_image
     - field.field.component.homepage_feature_callout.field_feature_link
   module:
-    - bricks
     - link
     - text
 id: component.homepage_feature_callout.default
@@ -24,7 +23,7 @@ content:
     type: text_default
     region: content
   field_feature_image:
-    type: bricks_nested
+    type: entity_reference_entity_view
     weight: 0
     label: hidden
     settings:

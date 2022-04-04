@@ -7,13 +7,16 @@ dependencies:
     - field.field.node.event.field_datetime
     - field.field.node.event.field_event_category
     - field.field.node.event.field_location
-    - field.field.node.event.field_signature_image
-    - field.field.node.event.field_spotlight_event
+    - field.field.node.event.field_signature_description
+    - field.field.node.event.field_signature_event
+    - field.field.node.event.field_signature_media
     - field.field.node.event.field_tags
+    - field.field.node.event.field_teaser_image
     - node.type.event
   module:
     - datetime
     - field_group
+    - media_library
     - path
     - text
     - workbench_moderation
@@ -77,20 +80,27 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_signature_image:
-    weight: 27
+  field_signature_description:
+    weight: 18
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
     region: content
-  field_spotlight_event:
-    weight: 26
+  field_signature_event:
+    weight: 16
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
+    region: content
+  field_signature_media:
+    type: media_library_widget
+    weight: 17
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
     region: content
   field_tags:
     weight: 11
@@ -101,6 +111,13 @@ content:
       match_limit: 10
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_teaser_image:
+    type: media_library_widget
+    weight: 8
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
     region: content
   langcode:
     type: language_select

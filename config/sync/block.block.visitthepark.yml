@@ -1,4 +1,4 @@
-uuid: 0303fc33-609f-41f5-9969-15167d6d9fb5
+uuid: 5d5415b3-aad6-4750-a313-5f1b7f15a76b
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ dependencies:
 id: visitthepark
 theme: avenue
 region: content
-weight: -4
+weight: -3
 provider: null
 plugin: 'menu_block:visit-the-park'
 settings:
@@ -21,12 +21,21 @@ settings:
   label: 'Visit the Park'
   provider: menu_block
   label_display: '0'
+  follow: false
+  follow_parent: child
   level: 1
   depth: 0
-  expand: 0
+  expand_all_items: false
   parent: 'visit-the-park:'
   suggestion: visit_the_park
+  label_type: block
+  label_link: false
 visibility:
+  request_path:
+    id: request_path
+    pages: "/visit\r\n"
+    negate: false
+    context_mapping: {  }
   'entity_bundle:node':
     id: 'entity_bundle:node'
     bundles:
@@ -35,8 +44,3 @@ visibility:
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
-  request_path:
-    id: request_path
-    pages: "/visit\r\n/visit/*"
-    negate: false
-    context_mapping: {  }

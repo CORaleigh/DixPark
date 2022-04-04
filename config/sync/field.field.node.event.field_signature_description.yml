@@ -1,17 +1,17 @@
-uuid: acf0c374-73fc-41f2-841a-e65e1174d75b
+uuid: 58a28a93-c832-4037-ad77-247c8285fcf9
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_signature_image
+    - field.storage.node.field_signature_description
     - node.type.event
   module:
     - text
-id: node.event.field_signature_image
-field_name: field_signature_image
+id: node.event.field_signature_description
+field_name: field_signature_description
 entity_type: node
 bundle: event
-label: 'Signature Image'
+label: 'Signature Description'
 description: ''
 required: false
 translatable: false

@@ -1,4 +1,4 @@
-uuid: dc41cf91-d151-44a7-8b82-964821f4ba4c
+uuid: 1f368910-d382-4425-82a9-dae438583abd
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: getinvolved
 theme: avenue
 region: content
-weight: -3
+weight: -4
 provider: null
 plugin: 'menu_block:get-involved'
 settings:
@@ -20,11 +20,15 @@ settings:
   label: 'Get Involved'
   provider: menu_block
   label_display: '0'
+  follow: false
+  follow_parent: child
   level: 1
   depth: 0
-  expand: 0
+  expand_all_items: false
   parent: 'get-involved:'
   suggestion: get_involved
+  label_type: block
+  label_link: false
 visibility:
   request_path:
     id: request_path

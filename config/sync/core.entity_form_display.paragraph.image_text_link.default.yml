@@ -1,4 +1,4 @@
-uuid: 2bea6d97-469f-40ec-b1ed-d2480ef54700
+uuid: ee6c80af-a12c-42c5-aeae-4dbb538e2ca1
 langcode: en
 status: true
 dependencies:
@@ -16,7 +16,7 @@ bundle: image_text_link
 mode: default
 content:
   field_button:
-    weight: 8
+    weight: 1
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -24,7 +24,7 @@ content:
     type: link_default
     region: content
   field_text:
-    weight: 7
+    weight: 0
     settings:
       rows: 5
       placeholder: ''

@@ -1,0 +1,15 @@
+uuid: 47c779ec-22c0-451f-abee-b5ecd7571d5a
+langcode: en
+status: true
+dependencies: {  }
+name: signature_media
+label: 'Signature Media'
+effects:
+  5327388e-e5e3-4056-a01a-b25c51347dc4:
+    uuid: 5327388e-e5e3-4056-a01a-b25c51347dc4
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 420
+      height: 240
+      anchor: center-center

@@ -1,3 +1,4 @@
+uuid: dbb37620-5d93-4927-8722-4e9dfb1e3b0e
 langcode: en
 status: open
 dependencies:
@@ -16,7 +17,50 @@ id: contact
 title: 'Contact Us'
 description: "Questions, comments, or concerns? Share with us!<br />\r\n<br />\r\ninfo@dixpark.org<br />\r\n(919) 996-3285"
 category: ''
-elements: "name:\n  '#type': textfield\n  '#title': 'First Name'\n  '#default_value': '[current-user:display-name]'\n  '#title_display': invisible\n  '#description_display': invisible\n  '#placeholder': 'First Name'\n  '#required': true\nlast_name2:\n  '#type': textfield\n  '#title': 'Last Name'\n  '#title_display': invisible\n  '#description_display': invisible\n  '#placeholder': 'Last Name'\n  '#required': true\nemail:\n  '#type': email\n  '#title': 'Your Email'\n  '#default_value': '[current-user:mail]'\n  '#title_display': invisible\n  '#description_display': invisible\n  '#placeholder': 'Your Email'\n  '#required': true\nsubject:\n  '#type': textfield\n  '#title': Subject\n  '#title_display': invisible\n  '#description_display': invisible\n  '#placeholder': Subject\n  '#required': true\n  '#test': 'Testing contact webform from [site:name]'\nmessage:\n  '#type': textarea\n  '#title': Message\n  '#title_display': invisible\n  '#description_display': invisible\n  '#placeholder': 'Your Message'\n  '#required': true\n  '#test': 'Please ignore this email.'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send message'\n"
+elements: |
+  name:
+    '#type': textfield
+    '#title': 'First Name'
+    '#default_value': '[current-user:display-name]'
+    '#title_display': invisible
+    '#description_display': invisible
+    '#placeholder': 'First Name'
+    '#required': true
+  last_name2:
+    '#type': textfield
+    '#title': 'Last Name'
+    '#title_display': invisible
+    '#description_display': invisible
+    '#placeholder': 'Last Name'
+    '#required': true
+  email:
+    '#type': email
+    '#title': 'Your Email'
+    '#default_value': '[current-user:mail]'
+    '#title_display': invisible
+    '#description_display': invisible
+    '#placeholder': 'Your Email'
+    '#required': true
+  subject:
+    '#type': textfield
+    '#title': Subject
+    '#title_display': invisible
+    '#description_display': invisible
+    '#placeholder': Subject
+    '#required': true
+    '#test': 'Testing contact webform from [site:name]'
+  message:
+    '#type': textarea
+    '#title': Message
+    '#title_display': invisible
+    '#description_display': invisible
+    '#placeholder': 'Your Message'
+    '#required': true
+    '#test': 'Please ignore this email.'
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': 'Send message'
 css: ''
 javascript: ''
 settings:
@@ -28,7 +72,7 @@ settings:
   page: true
   page_submit_path: ''
   page_confirm_path: ''
-  page_admin_theme: false
+  page_theme_name: ''
   form_title: both
   form_submit_once: false
   form_exception_message: ''
@@ -37,7 +81,7 @@ settings:
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
-  form_remote_addr: true
+  form_disable_remote_addr: false
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
@@ -58,6 +102,11 @@ settings:
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
   submission_label: ''
   submission_log: false
   submission_views: {  }
@@ -83,11 +132,19 @@ settings:
   wizard_progress_percentage: false
   wizard_progress_link: false
   wizard_progress_states: false
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
   wizard_start_label: ''
   wizard_preview_link: false
   wizard_confirmation: true
   wizard_confirmation_label: ''
   wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -133,6 +190,8 @@ settings:
   results_customize: false
   token_view: false
   token_update: false
+  token_delete: false
+  serial_disabled: false
 access:
   create:
     roles:
@@ -184,6 +243,7 @@ handlers:
   mailchimp:
     id: mailchimp
     label: MailChimp
+    notes: ''
     handler_id: mailchimp
     status: true
     conditions: {  }
@@ -196,6 +256,5 @@ handlers:
       interest_groups: {  }
       control: ''
 variants: {  }
-uuid: dbb37620-5d93-4927-8722-4e9dfb1e3b0e
 _core:
   default_config_hash: GStSV-m8JLyGU8J6dk80TIppJJHYeq790I3m6ZRLS4w

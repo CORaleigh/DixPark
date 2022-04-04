@@ -3,6 +3,6 @@ langcode: en
 status: true
 dependencies: {  }
 id: master-planning
-label: 'Master Planning'
-description: 'Master Planning Sidebar Menu'
+label: 'Park Planning'
+description: 'Park Planning Sidebar Menu'
 locked: false

@@ -1,7 +1,9 @@
 uuid: e5115a2f-144d-4d19-ba98-731fe338d593
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - media
 name: 'Full HTML No WYSIWYG'
 format: full_html_no_wysiwyg
 weight: -9
@@ -18,3 +20,12 @@ filters:
     status: true
     weight: 10
     settings: {  }
+  media_embed:
+    id: media_embed
+    provider: media
+    status: false
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_media_types: {  }
+      allowed_view_modes: {  }

@@ -8,9 +8,11 @@ dependencies:
     - field.field.node.event.field_datetime
     - field.field.node.event.field_event_category
     - field.field.node.event.field_location
-    - field.field.node.event.field_signature_image
-    - field.field.node.event.field_spotlight_event
+    - field.field.node.event.field_signature_description
+    - field.field.node.event.field_signature_event
+    - field.field.node.event.field_signature_media
     - field.field.node.event.field_tags
+    - field.field.node.event.field_teaser_image
     - node.type.event
   module:
     - user
@@ -34,8 +36,10 @@ hidden:
   field_datetime: true
   field_event_category: true
   field_location: true
-  field_signature_image: true
-  field_spotlight_event: true
+  field_signature_description: true
+  field_signature_event: true
+  field_signature_media: true
   field_tags: true
+  field_teaser_image: true
   langcode: true
   search_api_excerpt: true

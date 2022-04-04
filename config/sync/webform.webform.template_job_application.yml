@@ -1,3 +1,4 @@
+uuid: 9702129e-b514-401f-ac0b-80551a8dcded
 langcode: en
 status: closed
 dependencies:
@@ -14,7 +15,75 @@ id: template_job_application
 title: 'Job Application'
 description: 'A job application webform template.'
 category: ''
-elements: "information:\n  '#title': 'Your Information'\n  '#type': fieldset\n  first_name:\n    '#title': 'First Name'\n    '#type': textfield\n    '#required': true\n  last_name:\n    '#title': 'Last Name'\n    '#type': textfield\n    '#required': true\n  gender:\n    '#type': radios\n    '#title': Gender\n    '#options': gender\n    '#required': true\ncontact_information:\n  '#title': 'Contact Information'\n  '#type': fieldset\n  contact:\n    '#type': webform_contact\n    '#title': Contact\n    '#title_display': invisible\n    '#name__access': false\n    '#company__access': false\nresume:\n  '#title': 'Your Resume'\n  '#type': fieldset\n  resume_method:\n    '#type': radios\n    '#options':\n      attach: 'Attach resume file'\n      paste: 'Paste your resume'\n    '#prefix': '<div class=\"container-inline\">'\n    '#suffix': '</div>'\n    '#default_value': attach\n  resume_file:\n    '#type': managed_file\n    '#title': Resume\n    '#title_display': invisible\n    '#states':\n      visible:\n        ':input[name=\"resume_method\"]':\n          value: attach\n      required:\n        ':input[name=\"resume_method\"]':\n          value: attach\n      enabled:\n        ':input[name=\"resume_method\"]':\n          value: attach\n  resume_text:\n    '#type': textarea\n    '#title': Resume\n    '#title_display': invisible\n    '#states':\n      visible:\n        ':input[name=\"resume_method\"]':\n          value: paste\n      required:\n        ':input[name=\"resume_method\"]':\n          value: paste\n      enabled:\n        ':input[name=\"resume_method\"]':\n          value: paste\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Apply\n"
+elements: |
+  information:
+    '#title': 'Your Information'
+    '#type': fieldset
+    first_name:
+      '#title': 'First Name'
+      '#type': textfield
+      '#required': true
+    last_name:
+      '#title': 'Last Name'
+      '#type': textfield
+      '#required': true
+    gender:
+      '#type': radios
+      '#title': Gender
+      '#options': gender
+      '#required': true
+  contact_information:
+    '#title': 'Contact Information'
+    '#type': fieldset
+    contact:
+      '#type': webform_contact
+      '#title': Contact
+      '#title_display': invisible
+      '#name__access': false
+      '#company__access': false
+  resume:
+    '#title': 'Your Resume'
+    '#type': fieldset
+    resume_method:
+      '#type': radios
+      '#options':
+        attach: 'Attach resume file'
+        paste: 'Paste your resume'
+      '#prefix': '<div class="container-inline">'
+      '#suffix': '</div>'
+      '#default_value': attach
+    resume_file:
+      '#type': managed_file
+      '#title': Resume
+      '#title_display': invisible
+      '#states':
+        visible:
+          ':input[name="resume_method"]':
+            value: attach
+        required:
+          ':input[name="resume_method"]':
+            value: attach
+        enabled:
+          ':input[name="resume_method"]':
+            value: attach
+    resume_text:
+      '#type': textarea
+      '#title': Resume
+      '#title_display': invisible
+      '#states':
+        visible:
+          ':input[name="resume_method"]':
+            value: paste
+        required:
+          ':input[name="resume_method"]':
+            value: paste
+        enabled:
+          ':input[name="resume_method"]':
+            value: paste
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': Apply
 css: ''
 javascript: ''
 settings:
@@ -26,7 +95,7 @@ settings:
   page: true
   page_submit_path: ''
   page_confirm_path: ''
-  page_admin_theme: false
+  page_theme_name: ''
   form_title: both
   form_submit_once: false
   form_exception_message: ''
@@ -35,7 +104,7 @@ settings:
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
-  form_remote_addr: true
+  form_disable_remote_addr: false
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
@@ -56,6 +125,11 @@ settings:
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
   submission_label: ''
   submission_log: false
   submission_views: {  }
@@ -81,11 +155,19 @@ settings:
   wizard_progress_percentage: false
   wizard_progress_link: false
   wizard_progress_states: false
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
   wizard_start_label: ''
   wizard_preview_link: false
   wizard_confirmation: true
   wizard_confirmation_label: ''
   wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -131,6 +213,8 @@ settings:
   results_customize: false
   token_view: false
   token_update: false
+  token_delete: false
+  serial_disabled: false
 access:
   create:
     roles:
@@ -182,6 +266,7 @@ handlers:
   email_notification:
     id: email
     label: 'Email Notification'
+    notes: ''
     handler_id: email_notification
     status: true
     conditions: {  }
@@ -216,6 +301,5 @@ handlers:
       theme_name: ''
       parameters: {  }
 variants: {  }
-uuid: 9702129e-b514-401f-ac0b-80551a8dcded
 _core:
   default_config_hash: T1jdx4WwrMtsHy27DeOjlZ0sdHRPnDbmx775jzAgiUM

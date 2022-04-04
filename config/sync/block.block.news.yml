@@ -14,7 +14,7 @@ dependencies:
 id: news
 theme: avenue
 region: content
-weight: -2
+weight: -1
 provider: null
 plugin: 'block_content:3f66568e-d19a-4bf9-ae10-1f0363921642'
 settings:

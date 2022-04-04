@@ -2,8 +2,6 @@ uuid: 31bbc33d-df6a-4d80-8e3e-2f4703ab7343
 langcode: en
 status: true
 dependencies:
-  config:
-    - core.entity_view_mode.media.media_library
   module:
     - editor
     - media
@@ -52,9 +50,8 @@ filters:
     status: true
     weight: 100
     settings:
-      default_view_mode: media_library
+      default_view_mode: default
       allowed_media_types:
+        document: document
         image: image
-        video: video
-      allowed_view_modes:
-        media_library: media_library
+      allowed_view_modes: {  }

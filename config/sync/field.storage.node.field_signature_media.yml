@@ -1,16 +1,17 @@
-uuid: b3dc4f20-99b4-4c8c-902f-f3b9ddf528ff
+uuid: 07f6dc50-7252-4e42-94bc-25c6f301893e
 langcode: en
 status: true
 dependencies:
   module:
+    - media
     - node
-    - text
-id: node.field_signature_image
-field_name: field_signature_image
+id: node.field_signature_media
+field_name: field_signature_media
 entity_type: node
-type: text_long
-settings: {  }
-module: text
+type: entity_reference
+settings:
+  target_type: media
+module: core
 locked: false
 cardinality: 1
 translatable: true

@@ -1,14 +1,16 @@
-uuid: 176aa6b1-cf5e-4d19-bcf2-5d6641da0a1b
+uuid: fc431e79-33e3-4935-b981-18a5dec29733
 langcode: en
 status: true
 dependencies:
   module:
+    - media
     - node
-id: node.field_spotlight_event
-field_name: field_spotlight_event
+id: node.field_teaser_image
+field_name: field_teaser_image
 entity_type: node
-type: boolean
-settings: {  }
+type: entity_reference
+settings:
+  target_type: media
 module: core
 locked: false
 cardinality: 1

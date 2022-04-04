@@ -14,7 +14,6 @@ permissions:
   - 'access site-wide contact form'
   - 'search content'
   - 'use text format restricted_html'
-  - 'view any brick entities'
   - 'view any component entities'
   - 'view media'
   - 'view paragraph content image_text'

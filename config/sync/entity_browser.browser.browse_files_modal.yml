@@ -1,4 +1,4 @@
-uuid: ea05920a-7139-4a90-be18-cc89758c9984
+uuid: 261066cd-aac1-44ca-af1c-191da684e026
 langcode: und
 status: true
 dependencies:
@@ -45,7 +45,7 @@ widgets:
     settings:
       upload_location: 'public://'
       dropzone_description: 'Click or drop files here to upload them'
-      max_filesize: 32M
+      max_filesize: 256M
       extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp'
       clientside_resize: false
       resize_width: null

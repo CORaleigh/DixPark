@@ -1,3 +1,4 @@
+uuid: 8743803b-97a7-44c6-9b9a-e24681b3d4d6
 langcode: en
 status: closed
 dependencies:
@@ -14,7 +15,44 @@ id: template_registration
 title: Registration
 description: 'A registration webform template.'
 category: ''
-elements: "personal_information:\n  '#title': 'Your Personal Information'\n  '#type': fieldset\n  first_name:\n    '#title': 'First Name'\n    '#type': textfield\n    '#required': true\n  last_name:\n    '#title': 'Last Name'\n    '#type': textfield\n    '#required': true\ncontact_information:\n  '#title': 'Your Contact Information'\n  '#type': fieldset\n  contact:\n    '#type': webform_contact\n    '#title': Contact\n    '#title_display': invisible\n    '#name__access': false\n    '#company__access': false\nmailinglist:\n  '#title': 'Mailing List'\n  '#type': fieldset\n  subscribe:\n    '#title': 'Please subscribe me to your mailing list.'\n    '#type': checkbox\nadditional_information:\n  '#title': 'Additional Information'\n  '#type': fieldset\n  '#open': true\n  notes:\n    '#title': Comments\n    '#type': textarea\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Register\n"
+elements: |
+  personal_information:
+    '#title': 'Your Personal Information'
+    '#type': fieldset
+    first_name:
+      '#title': 'First Name'
+      '#type': textfield
+      '#required': true
+    last_name:
+      '#title': 'Last Name'
+      '#type': textfield
+      '#required': true
+  contact_information:
+    '#title': 'Your Contact Information'
+    '#type': fieldset
+    contact:
+      '#type': webform_contact
+      '#title': Contact
+      '#title_display': invisible
+      '#name__access': false
+      '#company__access': false
+  mailinglist:
+    '#title': 'Mailing List'
+    '#type': fieldset
+    subscribe:
+      '#title': 'Please subscribe me to your mailing list.'
+      '#type': checkbox
+  additional_information:
+    '#title': 'Additional Information'
+    '#type': fieldset
+    '#open': true
+    notes:
+      '#title': Comments
+      '#type': textarea
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': Register
 css: ''
 javascript: ''
 settings:
@@ -26,7 +64,7 @@ settings:
   page: true
   page_submit_path: ''
   page_confirm_path: ''
-  page_admin_theme: false
+  page_theme_name: ''
   form_title: both
   form_submit_once: false
   form_exception_message: ''
@@ -35,7 +73,7 @@ settings:
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
-  form_remote_addr: true
+  form_disable_remote_addr: false
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
@@ -56,6 +94,11 @@ settings:
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
   submission_label: ''
   submission_log: false
   submission_views: {  }
@@ -81,11 +124,19 @@ settings:
   wizard_progress_percentage: false
   wizard_progress_link: false
   wizard_progress_states: false
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
   wizard_start_label: ''
   wizard_preview_link: false
   wizard_confirmation: true
   wizard_confirmation_label: ''
   wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -131,6 +182,8 @@ settings:
   results_customize: false
   token_view: false
   token_update: false
+  token_delete: false
+  serial_disabled: false
 access:
   create:
     roles:
@@ -182,6 +235,7 @@ handlers:
   email_notification:
     id: email
     label: 'Email Notification'
+    notes: ''
     handler_id: email_notification
     status: true
     conditions: {  }
@@ -216,6 +270,5 @@ handlers:
       theme_name: ''
       parameters: {  }
 variants: {  }
-uuid: 8743803b-97a7-44c6-9b9a-e24681b3d4d6
 _core:
   default_config_hash: oa6uuT6CQ-w3w3yewX3gtD60-AjTaCXzBa7mGCExP-Y

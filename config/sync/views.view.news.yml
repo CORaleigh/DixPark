@@ -1090,7 +1090,11 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: " <div class=\"views-field views-field-field-tweet-date\"><div class=\"field-content tweet-date\"><a href=\"http://twitter.com/dixconservancy/status/{{ field_tweet_id }}\" class=\"white-text\" target=\"_blank\"><i class=\"fa fa-twitter\" aria-hidden=\"true\"></i> <time datetime=\"00Z\" class=\"datetime\"> {{ created }} </time></a>\n  </div></div>\n\n<div class=\"views-field views-field-body\"><span class=\"field-content\">{{ field_tweet_content }}</span></div>\n"
+            text: |2
+               <div class="views-field views-field-field-tweet-date"><div class="field-content tweet-date"><a href="http://twitter.com/dixconservancy/status/{{ field_tweet_id }}" class="white-text" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> <time datetime="00Z" class="datetime"> {{ created }} </time></a>
+                </div></div>
+
+              <div class="views-field views-field-body"><span class="field-content">{{ field_tweet_content }}</span></div>
             make_link: false
             path: ''
             absolute: false
@@ -1152,7 +1156,24 @@ display:
           exclude: true
           alter:
             alter_text: false
-            text: "<div class=\"views-field views-field-field-display-date\">\n<div class=\"field-content\">\n<time datetime=\"2017-08-08T17:00:00Z\" class=\"datetime\">{{ field_display_date }}</time>\n</div>\n</div>\n<div class=\"views-field views-field-title\">\n<h3 class=\"field-content\"><a href=\"/article/check-out-aerial-photos-construction\" hreflang=\"en\">{{ title }}</a>\n</h3>\n</div>\n<div class=\"views-field views-field-body\">\n<span class=\"field-content\">{{ body__summary }}</span>\n</div>\n<div class=\"views-field views-field-view-node\">\n<span class=\"field-content\">\n{{ view_node }}\n</span>\n</div>\n"
+            text: |
+              <div class="views-field views-field-field-display-date">
+              <div class="field-content">
+              <time datetime="2017-08-08T17:00:00Z" class="datetime">{{ field_display_date }}</time>
+              </div>
+              </div>
+              <div class="views-field views-field-title">
+              <h3 class="field-content"><a href="/article/check-out-aerial-photos-construction" hreflang="en">{{ title }}</a>
+              </h3>
+              </div>
+              <div class="views-field views-field-body">
+              <span class="field-content">{{ body__summary }}</span>
+              </div>
+              <div class="views-field views-field-view-node">
+              <span class="field-content">
+              {{ view_node }}
+              </span>
+              </div>
             make_link: false
             path: ''
             absolute: false
@@ -1215,7 +1236,24 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"views-field views-field-field-display-date\">\n<div class=\"field-content\">\n<time datetime=\"2017-08-08T17:00:00Z\" class=\"datetime\">{{ field_display_date }}</time>\n</div>\n</div>\n<div class=\"views-field views-field-title\">\n<h3 class=\"field-content\"><a href=\"/article/check-out-aerial-photos-construction\" hreflang=\"en\">{{ title }}</a>\n</h3>\n</div>\n<div class=\"views-field views-field-body\">\n<span class=\"field-content\">{{ body }}</span>\n</div>\n<div class=\"views-field views-field-view-node\">\n<span class=\"field-content\">\n{{ view_node }}\n</span>\n</div>\n"
+            text: |
+              <div class="views-field views-field-field-display-date">
+              <div class="field-content">
+              <time datetime="2017-08-08T17:00:00Z" class="datetime">{{ field_display_date }}</time>
+              </div>
+              </div>
+              <div class="views-field views-field-title">
+              <h3 class="field-content"><a href="/article/check-out-aerial-photos-construction" hreflang="en">{{ title }}</a>
+              </h3>
+              </div>
+              <div class="views-field views-field-body">
+              <span class="field-content">{{ body }}</span>
+              </div>
+              <div class="views-field views-field-view-node">
+              <span class="field-content">
+              {{ view_node }}
+              </span>
+              </div>
             make_link: false
             path: ''
             absolute: false

@@ -7,7 +7,7 @@ fetch:
   timeout: 30
 notification:
   emails:
-    - devs@div.digital
+    - rickey.smith@raleighnc.gov
   threshold: security
 _core:
   default_config_hash: 2QzULf0zovJQx3J06Y9rufzzfi-CY2CTTlEfJJh2Qyw

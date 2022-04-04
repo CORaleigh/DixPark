@@ -18,14 +18,18 @@ provider: null
 plugin: 'menu_block:master-planning'
 settings:
   id: 'menu_block:master-planning'
-  label: 'Master Planning'
+  label: 'Park Planning'
   provider: menu_block
   label_display: '0'
+  follow: false
+  follow_parent: child
   level: 1
   depth: 0
-  expand: 0
+  expand_all_items: false
   parent: 'master-planning:'
   suggestion: master_planning
+  label_type: block
+  label_link: false
 visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'

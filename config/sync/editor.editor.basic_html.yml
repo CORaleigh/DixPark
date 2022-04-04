@@ -45,10 +45,10 @@ settings:
           items:
             - Source
   plugins:
-    stylescombo:
-      styles: "div.col-2|2 Column\r\ndiv.col-3|3 Column\r\ndiv.col-4|4 Column\r\n"
     language:
       language_list: un
+    stylescombo:
+      styles: "div.col-2|2 Column\r\ndiv.col-3|3 Column\r\ndiv.col-4|4 Column\r\n"
 image_upload:
   status: true
   scheme: public
