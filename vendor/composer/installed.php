@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '9b178c17a286121bb67aad7993e7cfca021bfff9',
+        'reference' => '66fbdf2fc661538036c854bb9e07269c4d24e643',
         'name' => 'drupal-composer/drupal-project',
         'dev' => true,
     ),
@@ -346,7 +346,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '9b178c17a286121bb67aad7993e7cfca021bfff9',
+            'reference' => '66fbdf2fc661538036c854bb9e07269c4d24e643',
             'dev_requirement' => false,
         ),
         'drupal/action' => array(
@@ -1172,6 +1172,15 @@
             'reference' => '8.x-1.12',
             'dev_requirement' => false,
         ),
+        'drupal/mailsystem' => array(
+            'pretty_version' => '4.3.0',
+            'version' => '4.3.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../docroot/modules/contrib/mailsystem',
+            'aliases' => array(),
+            'reference' => '8.x-4.3',
+            'dev_requirement' => false,
+        ),
         'drupal/masonry' => array(
             'pretty_version' => '1.2.0',
             'version' => '1.2.0.0',
@@ -1308,6 +1317,15 @@
                 1 => '8.9.0',
             ),
         ),
+        'drupal/pantheon_advanced_page_cache' => array(
+            'pretty_version' => '1.2.0',
+            'version' => '1.2.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../docroot/modules/contrib/pantheon_advanced_page_cache',
+            'aliases' => array(),
+            'reference' => '8.x-1.2',
+            'dev_requirement' => false,
+        ),
         'drupal/paragraphs' => array(
             'pretty_version' => '1.12.0',
             'version' => '1.12.0.0',
@@ -1363,6 +1381,24 @@
             'reference' => '8.x-1.6',
             'dev_requirement' => false,
         ),
+        'drupal/redis' => array(
+            'pretty_version' => '1.5.0',
+            'version' => '1.5.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../docroot/modules/contrib/redis',
+            'aliases' => array(),
+            'reference' => '8.x-1.5',
+            'dev_requirement' => false,
+        ),
+        'drupal/reroute_email' => array(
+            'pretty_version' => '2.1.1',
+            'version' => '2.1.1.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../docroot/modules/contrib/reroute_email',
+            'aliases' => array(),
+            'reference' => '2.1.1',
+            'dev_requirement' => false,
+        ),
         'drupal/responsive_image' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -1391,6 +1427,15 @@
             'install_path' => __DIR__ . '/../../docroot/modules/contrib/search_api',
             'aliases' => array(),
             'reference' => '8.x-1.20',
+            'dev_requirement' => false,
+        ),
+        'drupal/sendgrid_integration' => array(
+            'pretty_version' => '1.7.0',
+            'version' => '1.7.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../docroot/modules/contrib/sendgrid_integration',
+            'aliases' => array(),
+            'reference' => '8.x-1.7',
             'dev_requirement' => false,
         ),
         'drupal/serialization' => array(
@@ -1702,6 +1747,15 @@
             'reference' => '80a23b64f44d54dd571d114c473d9d7e9ed84ca5',
             'dev_requirement' => true,
         ),
+        'fastglass/sendgrid' => array(
+            'pretty_version' => '1.0.12',
+            'version' => '1.0.12.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../fastglass/sendgrid',
+            'aliases' => array(),
+            'reference' => '2f118ad67787899a84a95a870fb90a67949c3b82',
+            'dev_requirement' => false,
+        ),
         'friends-of-behat/mink-browserkit-driver' => array(
             'pretty_version' => 'v1.5.0',
             'version' => '1.5.0.0',
@@ -1754,6 +1808,15 @@
             'install_path' => __DIR__ . '/../guzzlehttp/psr7',
             'aliases' => array(),
             'reference' => 'dc960a912984efb74d0a90222870c72c87f10c91',
+            'dev_requirement' => false,
+        ),
+        'html2text/html2text' => array(
+            'pretty_version' => '4.3.1',
+            'version' => '4.3.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../html2text/html2text',
+            'aliases' => array(),
+            'reference' => '61ad68e934066a6f8df29a3d23a6460536d0855c',
             'dev_requirement' => false,
         ),
         'instaclick/php-webdriver' => array(
@@ -1872,6 +1935,15 @@
             'replaced' => array(
                 0 => '~2.0',
             ),
+        ),
+        'pantheon-systems/drupal-integrations' => array(
+            'pretty_version' => '8.0.4',
+            'version' => '8.0.4.0',
+            'type' => 'project',
+            'install_path' => __DIR__ . '/../pantheon-systems/drupal-integrations',
+            'aliases' => array(),
+            'reference' => 'ef88532ebffb23d7b9081a84e2818cb872d5316e',
+            'dev_requirement' => false,
         ),
         'pear/archive_tar' => array(
             'pretty_version' => '1.4.14',
@@ -2302,6 +2374,27 @@
             'aliases' => array(),
             'reference' => '749042a2315705d2dfbbc59234dd9ceb22bf3ff0',
             'dev_requirement' => true,
+        ),
+        'sendgrid/sendgrid-php' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '*',
+            ),
+        ),
+        'sendgrid/smtpapi' => array(
+            'pretty_version' => '0.6.11',
+            'version' => '0.6.11.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../sendgrid/smtpapi',
+            'aliases' => array(),
+            'reference' => '5a9fe64dc975f4042b143ba8d6cdac71e605f4ae',
+            'dev_requirement' => false,
+        ),
+        'sendgrid/smtpapi-php' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '*',
+            ),
         ),
         'shama/baton' => array(
             'dev_requirement' => false,
