@@ -61,6 +61,7 @@
         "drupal/redis": "^1.5",
         "drupal/reroute_email": "^2.0",
         "drupal/search_api": "^1.15",
+        "drupal/sendgrid_integration": "^1.7",
         "drupal/simple_sitemap": "^3.5",
         "drupal/stage_file_proxy": "^1.0",
         "drupal/token": "^1.6",
@@ -88,7 +89,15 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "drupal/console-extend-plugin": true,
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true,
+            "zaporylie/composer-drupal-optimizations": true
+        }
     },
     "autoload": {
         "classmap": [
