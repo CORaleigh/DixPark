@@ -50,13 +50,13 @@ if (!defined('PANTHEON_ENVIRONMENT')) {
   $variables = array (
   'domains' => 
   array (
-    'canonical' => 'www.dixpark.org',
+    'canonical' => 'dixpark.org',
     'synonyms' => 
     array (
       0 => 'live-dixpark.pantheonsite.io',
     ),
   ),
-  'redis' => false,
+  'redis' => true,
 );
 
 
